@@ -12,6 +12,9 @@
 
     <meta name="author" content="Mateen Sajjad">
 
+    <meta name="google-site-verification"
+        content="h9w4PP6efUmlF3X__f4TcFbUKSVev6J8piJcbQ5g7Ek">
+
     <meta name="robots" content="index, follow">
 
     <link rel="canonical" href="https://mateen2627.github.io/">
@@ -96,19 +99,14 @@
             text-decoration: none;
         }
 
-        /* NAVIGATION */
-
         nav {
             position: sticky;
             top: 0;
             z-index: 1000;
-
             display: flex;
             justify-content: space-between;
             align-items: center;
-
             padding: 18px 8%;
-
             background: rgba(255, 255, 255, 0.96);
             border-bottom: 1px solid var(--border);
         }
@@ -139,16 +137,11 @@
             color: var(--primary);
         }
 
-        /* HERO */
-
         .hero {
             min-height: 88vh;
-
             display: flex;
             align-items: center;
-
             padding: 90px 8%;
-
             background:
                 radial-gradient(
                     circle at top right,
@@ -164,29 +157,19 @@
 
         .eyebrow {
             display: inline-block;
-
             margin-bottom: 18px;
-
             padding: 7px 13px;
-
             border-radius: 30px;
-
             background: #dbeafe;
-
             color: #1d4ed8;
-
             font-size: 13px;
-
             font-weight: 700;
         }
 
         .hero h1 {
             font-size: clamp(45px, 7vw, 78px);
-
             line-height: 1.05;
-
             color: var(--dark);
-
             margin-bottom: 20px;
         }
 
@@ -196,21 +179,15 @@
 
         .hero h2 {
             font-size: clamp(22px, 3vw, 30px);
-
             font-weight: 500;
-
             color: #475569;
-
             margin-bottom: 20px;
         }
 
         .hero-description {
             max-width: 760px;
-
             font-size: 18px;
-
             color: var(--muted);
-
             margin-bottom: 30px;
         }
 
@@ -222,13 +199,9 @@
 
         .button {
             display: inline-block;
-
             padding: 12px 20px;
-
             border-radius: 8px;
-
             font-weight: 600;
-
             transition: 0.2s;
         }
 
@@ -243,9 +216,7 @@
 
         .secondary-button {
             background: white;
-
             color: var(--dark);
-
             border: 1px solid var(--border);
         }
 
@@ -253,8 +224,6 @@
             border-color: var(--primary);
             color: var(--primary);
         }
-
-        /* GENERAL */
 
         section {
             padding: 85px 8%;
@@ -266,15 +235,12 @@
 
         .section-header {
             max-width: 750px;
-
             margin-bottom: 40px;
         }
 
         .section-title {
             font-size: 36px;
-
             color: var(--dark);
-
             margin-bottom: 10px;
         }
 
@@ -282,49 +248,34 @@
             color: var(--muted);
         }
 
-        /* ABOUT */
-
         .about-container {
             max-width: 850px;
         }
 
         .about-container p {
             margin-bottom: 15px;
-
             font-size: 17px;
-
             color: var(--text);
         }
 
-        /* EDUCATION */
-
         .timeline-card {
             max-width: 850px;
-
             background: white;
-
             border: 1px solid var(--border);
-
             border-radius: 12px;
-
             padding: 28px;
         }
 
         .timeline-date {
             color: var(--primary);
-
             font-size: 14px;
-
             font-weight: 700;
-
             margin-bottom: 5px;
         }
 
         .timeline-card h3 {
             color: var(--dark);
-
             font-size: 23px;
-
             margin-bottom: 5px;
         }
 
@@ -332,175 +283,120 @@
             color: var(--muted);
         }
 
-        /* RESEARCH */
-
         .research-grid {
             display: grid;
-
-            grid-template-columns:
-                repeat(3, 1fr);
-
+            grid-template-columns: repeat(3, 1fr);
             gap: 20px;
         }
 
         .research-card {
             padding: 25px;
-
             background: white;
-
             border: 1px solid var(--border);
-
             border-radius: 12px;
-
             transition: 0.2s;
         }
 
         .research-card:hover {
             transform: translateY(-4px);
-
             border-color: #93c5fd;
         }
 
         .research-card h3 {
             color: var(--dark);
-
             margin-bottom: 8px;
         }
 
         .research-card p {
             color: var(--muted);
-
             font-size: 15px;
         }
 
-        /* PROJECTS */
-
         .projects-grid {
             display: grid;
-
-            grid-template-columns:
-                repeat(2, 1fr);
-
+            grid-template-columns: repeat(2, 1fr);
             gap: 20px;
         }
 
         .project-card {
             background: white;
-
             border: 1px solid var(--border);
-
             border-radius: 12px;
-
             padding: 28px;
-
             transition: 0.2s;
         }
 
         .project-card:hover {
             transform: translateY(-4px);
-
             border-color: #93c5fd;
         }
 
         .project-card h3 {
             color: var(--dark);
-
             font-size: 22px;
-
             margin-bottom: 8px;
         }
 
         .project-card p {
             color: var(--muted);
-
             margin-bottom: 18px;
         }
 
         .technology {
             display: flex;
-
             flex-wrap: wrap;
-
             gap: 7px;
-
             margin-bottom: 18px;
         }
 
         .technology span {
             padding: 5px 9px;
-
             background: #eff6ff;
-
             color: #1d4ed8;
-
             border-radius: 5px;
-
             font-size: 12px;
-
             font-weight: 600;
         }
 
         .project-link {
             color: var(--primary);
-
             font-weight: 600;
-
             font-size: 14px;
         }
 
-        /* SKILLS */
-
         .skills-container {
             display: flex;
-
             flex-wrap: wrap;
-
             gap: 10px;
-
             max-width: 900px;
         }
 
         .skill {
             padding: 9px 14px;
-
             background: white;
-
             border: 1px solid var(--border);
-
             border-radius: 20px;
-
             font-size: 14px;
-
             color: var(--text);
         }
 
-        /* EXPERIENCE */
-
         .experience-card {
             max-width: 850px;
-
             padding: 28px;
-
             background: white;
-
             border: 1px solid var(--border);
-
             border-radius: 12px;
         }
 
         .experience-card .date {
             color: var(--primary);
-
             font-size: 14px;
-
             font-weight: 700;
         }
 
         .experience-card h3 {
             color: var(--dark);
-
             font-size: 23px;
-
             margin: 5px 0;
         }
 
@@ -508,11 +404,8 @@
             color: var(--muted);
         }
 
-        /* CONTACT */
-
         .contact {
             background: var(--dark) !important;
-
             color: white;
         }
 
@@ -522,51 +415,35 @@
 
         .contact .section-description {
             color: #cbd5e1;
-
             max-width: 700px;
-
             margin-bottom: 25px;
         }
 
         .contact-links {
             display: flex;
-
             flex-wrap: wrap;
-
             gap: 12px;
         }
 
         .contact-links a {
             padding: 10px 16px;
-
             border: 1px solid #475569;
-
             border-radius: 7px;
-
             color: white;
         }
 
         .contact-links a:hover {
             background: white;
-
             color: var(--dark);
         }
 
-        /* FOOTER */
-
         footer {
             padding: 25px;
-
             text-align: center;
-
             background: #020617;
-
             color: #94a3b8;
-
             font-size: 14px;
         }
-
-        /* MOBILE */
 
         @media (max-width: 850px) {
 
@@ -598,8 +475,6 @@
 
 <body>
 
-    <!-- NAVIGATION -->
-
     <nav>
 
         <a href="#" class="logo">
@@ -608,40 +483,17 @@
 
         <ul>
 
-            <li>
-                <a href="#about">About</a>
-            </li>
-
-            <li>
-                <a href="#education">Education</a>
-            </li>
-
-            <li>
-                <a href="#research">Research</a>
-            </li>
-
-            <li>
-                <a href="#projects">Projects</a>
-            </li>
-
-            <li>
-                <a href="#skills">Skills</a>
-            </li>
-
-            <li>
-                <a href="#experience">Experience</a>
-            </li>
-
-            <li>
-                <a href="#contact">Contact</a>
-            </li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
 
         </ul>
 
     </nav>
-
-
-    <!-- HERO -->
 
     <section class="hero">
 
@@ -660,33 +512,27 @@
             </h2>
 
             <p class="hero-description">
-
                 I am a Computer Science student and developer interested
                 in Artificial Intelligence, Machine Learning, Natural
                 Language Processing, AI agents, and intelligent software
                 systems.
-
             </p>
 
             <div class="buttons">
 
-                <a
-                    href="#projects"
-                    class="button primary-button">
+                <a href="#projects" class="button primary-button">
                     View Projects
                 </a>
 
-                <a
-                    href="https://github.com/Mateen2627"
-                    target="_blank"
-                    class="button secondary-button">
+                <a href="https://github.com/Mateen2627"
+                   target="_blank"
+                   class="button secondary-button">
                     GitHub
                 </a>
 
-                <a
-                    href="https://www.linkedin.com/in/mateen-sajjad/"
-                    target="_blank"
-                    class="button secondary-button">
+                <a href="https://www.linkedin.com/in/mateen-sajjad/"
+                   target="_blank"
+                   class="button secondary-button">
                     LinkedIn
                 </a>
 
@@ -695,9 +541,6 @@
         </div>
 
     </section>
-
-
-    <!-- ABOUT -->
 
     <section id="about">
 
@@ -739,9 +582,6 @@
 
     </section>
 
-
-    <!-- EDUCATION -->
-
     <section id="education">
 
         <div class="section-header">
@@ -771,9 +611,6 @@
 
     </section>
 
-
-    <!-- RESEARCH -->
-
     <section id="research">
 
         <div class="section-header">
@@ -792,94 +629,56 @@
         <div class="research-grid">
 
             <div class="research-card">
-
-                <h3>
-                    Artificial Intelligence
-                </h3>
-
+                <h3>Artificial Intelligence</h3>
                 <p>
                     Intelligent systems, generative AI, AI applications,
                     and emerging artificial intelligence technologies.
                 </p>
-
             </div>
 
-
             <div class="research-card">
-
-                <h3>
-                    Machine Learning
-                </h3>
-
+                <h3>Machine Learning</h3>
                 <p>
                     Machine learning methods and their applications to
                     practical and real-world problems.
                 </p>
-
             </div>
 
-
             <div class="research-card">
-
-                <h3>
-                    Natural Language Processing
-                </h3>
-
+                <h3>Natural Language Processing</h3>
                 <p>
                     Natural language understanding, NLP systems,
                     and AI-assisted information processing.
                 </p>
-
             </div>
 
-
             <div class="research-card">
-
-                <h3>
-                    AI Agents
-                </h3>
-
+                <h3>AI Agents</h3>
                 <p>
                     Agentic AI systems, tool use, automation,
                     and intelligent workflows.
                 </p>
-
             </div>
 
-
             <div class="research-card">
-
-                <h3>
-                    Intelligent Software
-                </h3>
-
+                <h3>Intelligent Software</h3>
                 <p>
                     Combining software engineering with AI to build
                     practical intelligent applications.
                 </p>
-
             </div>
 
-
             <div class="research-card">
-
-                <h3>
-                    Post-Quantum Computing
-                </h3>
-
+                <h3>Post-Quantum Computing</h3>
                 <p>
                     Interest in post-quantum cryptography and
                     quantum-resilient secure communication.
                 </p>
-
             </div>
 
         </div>
 
     </section>
-
-
-    <!-- PROJECTS -->
 
     <section id="projects">
 
@@ -896,7 +695,6 @@
         </div>
 
         <div class="projects-grid">
-
 
             <div class="project-card">
 
@@ -922,17 +720,13 @@
 
                 </div>
 
-                <a
-                    href="https://github.com/Mateen2627/StudentEvaluationSystem"
-                    target="_blank"
-                    class="project-link">
-
+                <a href="https://github.com/Mateen2627/StudentEvaluationSystem"
+                   target="_blank"
+                   class="project-link">
                     View on GitHub →
-
                 </a>
 
             </div>
-
 
             <div class="project-card">
 
@@ -956,7 +750,6 @@
 
             </div>
 
-
             <div class="project-card">
 
                 <h3>
@@ -976,17 +769,13 @@
 
                 </div>
 
-                <a
-                    href="https://github.com/Mateen2627/financeflow"
-                    target="_blank"
-                    class="project-link">
-
+                <a href="https://github.com/Mateen2627/financeflow"
+                   target="_blank"
+                   class="project-link">
                     View on GitHub →
-
                 </a>
 
             </div>
-
 
             <div class="project-card">
 
@@ -1007,13 +796,10 @@
 
                 </div>
 
-                <a
-                    href="https://github.com/Mateen2627/myfirstapp"
-                    target="_blank"
-                    class="project-link">
-
+                <a href="https://github.com/Mateen2627/myfirstapp"
+                   target="_blank"
+                   class="project-link">
                     View on GitHub →
-
                 </a>
 
             </div>
@@ -1021,9 +807,6 @@
         </div>
 
     </section>
-
-
-    <!-- SKILLS -->
 
     <section id="skills">
 
@@ -1038,45 +821,26 @@
         <div class="skills-container">
 
             <span class="skill">Python</span>
-
             <span class="skill">PHP</span>
-
             <span class="skill">Laravel</span>
-
             <span class="skill">JavaScript</span>
-
             <span class="skill">HTML</span>
-
             <span class="skill">CSS</span>
-
             <span class="skill">MySQL</span>
-
             <span class="skill">FastAPI</span>
-
             <span class="skill">REST APIs</span>
-
             <span class="skill">Git</span>
-
             <span class="skill">GitHub</span>
-
             <span class="skill">Flutter</span>
-
             <span class="skill">Dart</span>
-
             <span class="skill">Artificial Intelligence</span>
-
             <span class="skill">Machine Learning</span>
-
             <span class="skill">Generative AI</span>
-
             <span class="skill">AI Agents</span>
 
         </div>
 
     </section>
-
-
-    <!-- EXPERIENCE -->
 
     <section id="experience">
 
@@ -1107,9 +871,6 @@
 
     </section>
 
-
-    <!-- CONTACT -->
-
     <section id="contact" class="contact">
 
         <div class="section-header">
@@ -1119,31 +880,26 @@
             </h2>
 
             <p class="section-description">
-
                 I am interested in graduate study, research opportunities,
                 AI/ML projects, and meaningful technical collaborations.
-
             </p>
 
         </div>
 
         <div class="contact-links">
 
-            <a
-                href="https://github.com/Mateen2627"
-                target="_blank">
+            <a href="https://github.com/Mateen2627"
+               target="_blank">
                 GitHub
             </a>
 
-            <a
-                href="https://www.linkedin.com/in/mateen-sajjad/"
-                target="_blank">
+            <a href="https://www.linkedin.com/in/mateen-sajjad/"
+               target="_blank">
                 LinkedIn
             </a>
 
-            <a
-                href="https://leetcode.com/u/mateen6767/"
-                target="_blank">
+            <a href="https://leetcode.com/u/mateen6767/"
+               target="_blank">
                 LeetCode
             </a>
 
@@ -1151,15 +907,9 @@
 
     </section>
 
-
-    <!-- FOOTER -->
-
     <footer>
-
         © 2026 Mateen Sajjad · Computer Science & AI/ML
-
     </footer>
-
 
 </body>
 </html>
