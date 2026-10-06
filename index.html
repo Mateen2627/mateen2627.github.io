@@ -5,31 +5,68 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Mateen Sajjad | Computer Science & AI</title>
+    <title>Mateen Sajjad | Computer Science & AI/ML</title>
 
     <meta name="description"
-        content="Mateen Sajjad is a Computer Science student and developer interested in Artificial Intelligence, Machine Learning, NLP, software development, and research.">
+        content="Mateen Sajjad is a Computer Science student and developer interested in Artificial Intelligence, Machine Learning, NLP, AI agents, and intelligent software systems.">
 
     <meta name="author" content="Mateen Sajjad">
 
-    <!-- Google / Search Engine Profile Information -->
+    <meta name="robots" content="index, follow">
+
+    <link rel="canonical" href="https://mateen2627.github.io/">
+
+    <!-- Open Graph -->
+    <meta property="og:title"
+        content="Mateen Sajjad | Computer Science & AI/ML">
+
+    <meta property="og:description"
+        content="Computer Science student interested in Artificial Intelligence, Machine Learning, NLP, and intelligent software systems.">
+
+    <meta property="og:type" content="profile">
+
+    <meta property="og:url"
+        content="https://mateen2627.github.io/">
+
+    <meta property="profile:first_name" content="Mateen">
+    <meta property="profile:last_name" content="Sajjad">
+
+    <!-- Google Person Structured Data -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Person",
       "name": "Mateen Sajjad",
+      "givenName": "Mateen",
+      "familyName": "Sajjad",
       "url": "https://mateen2627.github.io/",
       "jobTitle": "Computer Science Student and Developer",
-      "description": "Computer Science student interested in Artificial Intelligence, Machine Learning, NLP, software development, and research.",
+      "description": "Computer Science student and developer interested in Artificial Intelligence, Machine Learning, Natural Language Processing, AI agents, and intelligent software systems.",
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "National University of Modern Languages",
+        "alternateName": "NUML"
+      },
       "sameAs": [
         "https://github.com/Mateen2627",
         "https://www.linkedin.com/in/mateen-sajjad/",
         "https://leetcode.com/u/mateen6767/"
+      ],
+      "knowsAbout": [
+        "Artificial Intelligence",
+        "Machine Learning",
+        "Natural Language Processing",
+        "Generative AI",
+        "AI Agents",
+        "Software Development",
+        "Post-Quantum Cryptography",
+        "Web Development"
       ]
     }
     </script>
 
     <style>
+
         * {
             margin: 0;
             padding: 0;
@@ -37,216 +74,445 @@
             scroll-behavior: smooth;
         }
 
+        :root {
+            --primary: #2563eb;
+            --primary-dark: #1d4ed8;
+            --dark: #0f172a;
+            --text: #334155;
+            --muted: #64748b;
+            --light: #f8fafc;
+            --border: #e2e8f0;
+            --white: #ffffff;
+        }
+
         body {
             font-family: Arial, Helvetica, sans-serif;
+            color: var(--text);
+            background: var(--white);
             line-height: 1.7;
-            background: #f7f9fc;
-            color: #1f2937;
         }
 
         a {
             text-decoration: none;
-            color: inherit;
         }
+
+        /* NAVIGATION */
 
         nav {
             position: sticky;
             top: 0;
             z-index: 1000;
-            background: #ffffff;
-            border-bottom: 1px solid #e5e7eb;
-            padding: 18px 8%;
+
             display: flex;
             justify-content: space-between;
             align-items: center;
+
+            padding: 18px 8%;
+
+            background: rgba(255, 255, 255, 0.96);
+            border-bottom: 1px solid var(--border);
         }
 
         .logo {
             font-size: 22px;
-            font-weight: bold;
-            color: #111827;
+            font-weight: 700;
+            color: var(--dark);
+        }
+
+        .logo span {
+            color: var(--primary);
         }
 
         nav ul {
-            list-style: none;
             display: flex;
-            gap: 24px;
+            gap: 25px;
+            list-style: none;
         }
 
-        nav ul li a {
-            color: #4b5563;
+        nav ul a {
+            color: var(--text);
             font-size: 14px;
+            font-weight: 500;
         }
 
-        nav ul li a:hover {
-            color: #2563eb;
+        nav ul a:hover {
+            color: var(--primary);
         }
+
+        /* HERO */
 
         .hero {
             min-height: 88vh;
+
             display: flex;
             align-items: center;
-            padding: 80px 8%;
-            background: linear-gradient(135deg, #eef4ff, #ffffff);
+
+            padding: 90px 8%;
+
+            background:
+                radial-gradient(
+                    circle at top right,
+                    #dbeafe,
+                    transparent 35%
+                ),
+                #f8fafc;
         }
 
         .hero-content {
-            max-width: 850px;
+            max-width: 900px;
+        }
+
+        .eyebrow {
+            display: inline-block;
+
+            margin-bottom: 18px;
+
+            padding: 7px 13px;
+
+            border-radius: 30px;
+
+            background: #dbeafe;
+
+            color: #1d4ed8;
+
+            font-size: 13px;
+
+            font-weight: 700;
         }
 
         .hero h1 {
-            font-size: clamp(42px, 7vw, 76px);
+            font-size: clamp(45px, 7vw, 78px);
+
             line-height: 1.05;
-            color: #111827;
+
+            color: var(--dark);
+
             margin-bottom: 20px;
         }
 
         .hero h1 span {
-            color: #2563eb;
+            color: var(--primary);
         }
 
         .hero h2 {
-            font-size: 25px;
+            font-size: clamp(22px, 3vw, 30px);
+
             font-weight: 500;
-            color: #4b5563;
+
+            color: #475569;
+
             margin-bottom: 20px;
         }
 
-        .hero p {
-            max-width: 720px;
-            color: #6b7280;
+        .hero-description {
+            max-width: 760px;
+
             font-size: 18px;
+
+            color: var(--muted);
+
             margin-bottom: 30px;
         }
 
         .buttons {
             display: flex;
-            gap: 14px;
             flex-wrap: wrap;
+            gap: 12px;
         }
 
-        .btn {
+        .button {
             display: inline-block;
-            padding: 12px 22px;
+
+            padding: 12px 20px;
+
             border-radius: 8px;
+
             font-weight: 600;
+
             transition: 0.2s;
         }
 
-        .primary {
-            background: #2563eb;
+        .primary-button {
+            background: var(--primary);
             color: white;
         }
 
-        .primary:hover {
-            background: #1d4ed8;
+        .primary-button:hover {
+            background: var(--primary-dark);
         }
 
-        .secondary {
-            border: 1px solid #d1d5db;
+        .secondary-button {
             background: white;
+
+            color: var(--dark);
+
+            border: 1px solid var(--border);
         }
 
-        .secondary:hover {
-            border-color: #2563eb;
-            color: #2563eb;
+        .secondary-button:hover {
+            border-color: var(--primary);
+            color: var(--primary);
         }
+
+        /* GENERAL */
 
         section {
-            padding: 80px 8%;
+            padding: 85px 8%;
+        }
+
+        section:nth-child(even) {
+            background: var(--light);
+        }
+
+        .section-header {
+            max-width: 750px;
+
+            margin-bottom: 40px;
         }
 
         .section-title {
-            font-size: 34px;
-            color: #111827;
-            margin-bottom: 15px;
+            font-size: 36px;
+
+            color: var(--dark);
+
+            margin-bottom: 10px;
         }
 
-        .section-intro {
-            color: #6b7280;
-            max-width: 750px;
-            margin-bottom: 35px;
+        .section-description {
+            color: var(--muted);
         }
 
-        .about {
-            background: white;
-        }
+        /* ABOUT */
 
-        .about-text {
+        .about-container {
             max-width: 850px;
-            color: #4b5563;
+        }
+
+        .about-container p {
+            margin-bottom: 15px;
+
             font-size: 17px;
+
+            color: var(--text);
         }
 
-        .education-card,
-        .project-card,
-        .experience-card {
+        /* EDUCATION */
+
+        .timeline-card {
+            max-width: 850px;
+
             background: white;
-            border: 1px solid #e5e7eb;
+
+            border: 1px solid var(--border);
+
             border-radius: 12px;
-            padding: 25px;
-            margin-bottom: 20px;
+
+            padding: 28px;
         }
 
-        .education-card h3,
-        .project-card h3,
-        .experience-card h3 {
-            color: #111827;
-            margin-bottom: 8px;
-        }
+        .timeline-date {
+            color: var(--primary);
 
-        .education-card p,
-        .project-card p,
-        .experience-card p {
-            color: #6b7280;
-        }
-
-        .date {
-            color: #2563eb !important;
             font-size: 14px;
-            font-weight: 600;
-            margin-bottom: 8px;
+
+            font-weight: 700;
+
+            margin-bottom: 5px;
         }
 
-        .skills {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
+        .timeline-card h3 {
+            color: var(--dark);
+
+            font-size: 23px;
+
+            margin-bottom: 5px;
         }
 
-        .skill {
-            background: white;
-            border: 1px solid #dbe3ef;
-            padding: 9px 15px;
-            border-radius: 20px;
-            color: #374151;
-            font-size: 14px;
+        .timeline-card p {
+            color: var(--muted);
         }
+
+        /* RESEARCH */
 
         .research-grid {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
             gap: 20px;
         }
 
         .research-card {
-            background: white;
-            border: 1px solid #e5e7eb;
             padding: 25px;
+
+            background: white;
+
+            border: 1px solid var(--border);
+
             border-radius: 12px;
+
+            transition: 0.2s;
+        }
+
+        .research-card:hover {
+            transform: translateY(-4px);
+
+            border-color: #93c5fd;
         }
 
         .research-card h3 {
+            color: var(--dark);
+
             margin-bottom: 8px;
-            color: #111827;
         }
 
         .research-card p {
-            color: #6b7280;
+            color: var(--muted);
+
+            font-size: 15px;
         }
 
+        /* PROJECTS */
+
+        .projects-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(2, 1fr);
+
+            gap: 20px;
+        }
+
+        .project-card {
+            background: white;
+
+            border: 1px solid var(--border);
+
+            border-radius: 12px;
+
+            padding: 28px;
+
+            transition: 0.2s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-4px);
+
+            border-color: #93c5fd;
+        }
+
+        .project-card h3 {
+            color: var(--dark);
+
+            font-size: 22px;
+
+            margin-bottom: 8px;
+        }
+
+        .project-card p {
+            color: var(--muted);
+
+            margin-bottom: 18px;
+        }
+
+        .technology {
+            display: flex;
+
+            flex-wrap: wrap;
+
+            gap: 7px;
+
+            margin-bottom: 18px;
+        }
+
+        .technology span {
+            padding: 5px 9px;
+
+            background: #eff6ff;
+
+            color: #1d4ed8;
+
+            border-radius: 5px;
+
+            font-size: 12px;
+
+            font-weight: 600;
+        }
+
+        .project-link {
+            color: var(--primary);
+
+            font-weight: 600;
+
+            font-size: 14px;
+        }
+
+        /* SKILLS */
+
+        .skills-container {
+            display: flex;
+
+            flex-wrap: wrap;
+
+            gap: 10px;
+
+            max-width: 900px;
+        }
+
+        .skill {
+            padding: 9px 14px;
+
+            background: white;
+
+            border: 1px solid var(--border);
+
+            border-radius: 20px;
+
+            font-size: 14px;
+
+            color: var(--text);
+        }
+
+        /* EXPERIENCE */
+
+        .experience-card {
+            max-width: 850px;
+
+            padding: 28px;
+
+            background: white;
+
+            border: 1px solid var(--border);
+
+            border-radius: 12px;
+        }
+
+        .experience-card .date {
+            color: var(--primary);
+
+            font-size: 14px;
+
+            font-weight: 700;
+        }
+
+        .experience-card h3 {
+            color: var(--dark);
+
+            font-size: 23px;
+
+            margin: 5px 0;
+        }
+
+        .experience-card p {
+            color: var(--muted);
+        }
+
+        /* CONTACT */
+
         .contact {
-            background: #111827;
+            background: var(--dark) !important;
+
             color: white;
         }
 
@@ -254,40 +520,58 @@
             color: white;
         }
 
-        .contact p {
-            color: #d1d5db;
+        .contact .section-description {
+            color: #cbd5e1;
+
             max-width: 700px;
+
             margin-bottom: 25px;
         }
 
         .contact-links {
             display: flex;
+
             flex-wrap: wrap;
-            gap: 15px;
+
+            gap: 12px;
         }
 
         .contact-links a {
-            border: 1px solid #4b5563;
             padding: 10px 16px;
+
+            border: 1px solid #475569;
+
             border-radius: 7px;
+
+            color: white;
         }
 
         .contact-links a:hover {
             background: white;
-            color: #111827;
+
+            color: var(--dark);
         }
 
+        /* FOOTER */
+
         footer {
-            text-align: center;
             padding: 25px;
-            background: #0b1120;
-            color: #9ca3af;
+
+            text-align: center;
+
+            background: #020617;
+
+            color: #94a3b8;
+
             font-size: 14px;
         }
 
-        @media (max-width: 800px) {
+        /* MOBILE */
+
+        @media (max-width: 850px) {
+
             nav {
-                padding: 15px 5%;
+                padding: 16px 5%;
             }
 
             nav ul {
@@ -295,113 +579,192 @@
             }
 
             section {
-                padding: 60px 5%;
+                padding: 65px 5%;
             }
 
             .hero {
                 padding: 70px 5%;
             }
 
-            .research-grid {
+            .research-grid,
+            .projects-grid {
                 grid-template-columns: 1fr;
             }
+
         }
+
     </style>
 </head>
 
 <body>
 
-    <!-- Navigation -->
+    <!-- NAVIGATION -->
+
     <nav>
-        <div class="logo">Mateen Sajjad</div>
+
+        <a href="#" class="logo">
+            Mateen <span>Sajjad</span>
+        </a>
 
         <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#research">Research</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
+
+            <li>
+                <a href="#about">About</a>
+            </li>
+
+            <li>
+                <a href="#education">Education</a>
+            </li>
+
+            <li>
+                <a href="#research">Research</a>
+            </li>
+
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+
+            <li>
+                <a href="#skills">Skills</a>
+            </li>
+
+            <li>
+                <a href="#experience">Experience</a>
+            </li>
+
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+
         </ul>
+
     </nav>
 
 
-    <!-- Hero -->
+    <!-- HERO -->
+
     <section class="hero">
+
         <div class="hero-content">
 
-            <h1>Mateen <span>Sajjad</span></h1>
+            <div class="eyebrow">
+                Computer Science • AI/ML • Research
+            </div>
+
+            <h1>
+                Mateen <span>Sajjad</span>
+            </h1>
 
             <h2>
-                Computer Science | AI/ML | Software Development
+                Computer Science Student & AI/ML Enthusiast
             </h2>
 
-            <p>
-                Computer Science student and developer interested in
-                Artificial Intelligence, Machine Learning, Natural Language
-                Processing, intelligent software systems, and research.
+            <p class="hero-description">
+
+                I am a Computer Science student and developer interested
+                in Artificial Intelligence, Machine Learning, Natural
+                Language Processing, AI agents, and intelligent software
+                systems.
+
             </p>
 
             <div class="buttons">
-                <a class="btn primary" href="#projects">
+
+                <a
+                    href="#projects"
+                    class="button primary-button">
                     View Projects
                 </a>
 
-                <a class="btn secondary"
-                   href="https://github.com/Mateen2627"
-                   target="_blank">
+                <a
+                    href="https://github.com/Mateen2627"
+                    target="_blank"
+                    class="button secondary-button">
                     GitHub
                 </a>
 
-                <a class="btn secondary"
-                   href="https://www.linkedin.com/in/mateen-sajjad/"
-                   target="_blank">
+                <a
+                    href="https://www.linkedin.com/in/mateen-sajjad/"
+                    target="_blank"
+                    class="button secondary-button">
                     LinkedIn
                 </a>
+
             </div>
 
         </div>
-    </section>
-
-
-    <!-- About -->
-    <section id="about" class="about">
-
-        <h2 class="section-title">About Me</h2>
-
-        <p class="about-text">
-            I am a Computer Science student at the National University of
-            Modern Languages (NUML), Multan, with interests spanning
-            Artificial Intelligence, Machine Learning, software development,
-            and emerging computing technologies.
-
-            <br><br>
-
-            My academic and project experience includes developing web
-            applications, AI-enabled systems, APIs, and research-oriented
-            projects. I am particularly interested in applying AI and
-            computational methods to solve practical problems while
-            continuing to develop my research skills.
-        </p>
 
     </section>
 
 
-    <!-- Education -->
+    <!-- ABOUT -->
+
+    <section id="about">
+
+        <div class="section-header">
+
+            <h2 class="section-title">
+                About Me
+            </h2>
+
+            <p class="section-description">
+                A brief overview of my academic and technical background.
+            </p>
+
+        </div>
+
+        <div class="about-container">
+
+            <p>
+                I am pursuing a Bachelor of Science in Computer Science
+                at the National University of Modern Languages (NUML),
+                Multan.
+            </p>
+
+            <p>
+                My interests include Artificial Intelligence, Machine
+                Learning, Natural Language Processing, generative AI,
+                AI agents, and intelligent software systems.
+            </p>
+
+            <p>
+                My academic and practical work includes web applications,
+                AI-enabled systems, APIs, mobile applications, and
+                research-oriented projects. I am particularly interested
+                in developing intelligent systems and pursuing further
+                research through graduate study.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- EDUCATION -->
+
     <section id="education">
 
-        <h2 class="section-title">Education</h2>
+        <div class="section-header">
 
-        <div class="education-card">
+            <h2 class="section-title">
+                Education
+            </h2>
 
-            <p class="date">2023 – 2027</p>
+        </div>
+
+        <div class="timeline-card">
+
+            <div class="timeline-date">
+                2023 – 2027
+            </div>
 
             <h3>
                 Bachelor of Science in Computer Science
             </h3>
 
             <p>
-                National University of Modern Languages (NUML), Multan
+                National University of Modern Languages (NUML),
+                Multan, Pakistan
             </p>
 
         </div>
@@ -409,64 +772,106 @@
     </section>
 
 
-    <!-- Research -->
+    <!-- RESEARCH -->
+
     <section id="research">
 
-        <h2 class="section-title">Research Interests</h2>
+        <div class="section-header">
 
-        <p class="section-intro">
-            Areas I am interested in exploring through graduate study,
-            research projects, and future collaborations.
-        </p>
+            <h2 class="section-title">
+                Research Interests
+            </h2>
+
+            <p class="section-description">
+                Areas I am interested in exploring through graduate study,
+                research projects, and future collaborations.
+            </p>
+
+        </div>
 
         <div class="research-grid">
 
             <div class="research-card">
-                <h3>Artificial Intelligence</h3>
+
+                <h3>
+                    Artificial Intelligence
+                </h3>
+
                 <p>
                     Intelligent systems, generative AI, AI applications,
-                    and emerging AI technologies.
+                    and emerging artificial intelligence technologies.
                 </p>
+
             </div>
 
+
             <div class="research-card">
-                <h3>Machine Learning</h3>
+
+                <h3>
+                    Machine Learning
+                </h3>
+
                 <p>
                     Machine learning methods and their applications to
-                    real-world problems.
+                    practical and real-world problems.
                 </p>
+
             </div>
 
-            <div class="research-card">
-                <h3>Natural Language Processing</h3>
-                <p>
-                    Language understanding, NLP systems, and
-                    AI-assisted information processing.
-                </p>
-            </div>
 
             <div class="research-card">
-                <h3>AI Agents</h3>
+
+                <h3>
+                    Natural Language Processing
+                </h3>
+
                 <p>
-                    Agentic AI systems, automation, tool use, and
-                    intelligent workflows.
+                    Natural language understanding, NLP systems,
+                    and AI-assisted information processing.
                 </p>
+
             </div>
 
-            <div class="research-card">
-                <h3>Quantum-Resilient Computing</h3>
-                <p>
-                    Post-quantum cryptography and secure communication
-                    systems.
-                </p>
-            </div>
 
             <div class="research-card">
-                <h3>Intelligent Software Systems</h3>
+
+                <h3>
+                    AI Agents
+                </h3>
+
                 <p>
-                    Combining software engineering with AI to develop
+                    Agentic AI systems, tool use, automation,
+                    and intelligent workflows.
+                </p>
+
+            </div>
+
+
+            <div class="research-card">
+
+                <h3>
+                    Intelligent Software
+                </h3>
+
+                <p>
+                    Combining software engineering with AI to build
                     practical intelligent applications.
                 </p>
+
+            </div>
+
+
+            <div class="research-card">
+
+                <h3>
+                    Post-Quantum Computing
+                </h3>
+
+                <p>
+                    Interest in post-quantum cryptography and
+                    quantum-resilient secure communication.
+                </p>
+
             </div>
 
         </div>
@@ -474,93 +879,196 @@
     </section>
 
 
-    <!-- Projects -->
+    <!-- PROJECTS -->
+
     <section id="projects">
 
-        <h2 class="section-title">Projects</h2>
+        <div class="section-header">
 
-        <p class="section-intro">
-            Selected academic and software development projects.
-        </p>
+            <h2 class="section-title">
+                Selected Projects
+            </h2>
 
-        <div class="project-card">
-
-            <h3>
-                Student Evaluation and Management System
-            </h3>
-
-            <p>
-                An AI-enabled student evaluation and management platform
-                involving web technologies, role-based access control,
-                database management, and computer vision components.
+            <p class="section-description">
+                Academic, research, and software development projects.
             </p>
 
         </div>
 
-
-        <div class="project-card">
-
-            <h3>QuantX</h3>
-
-            <p>
-                A research-oriented project exploring quantum-resilient
-                secure communication and post-quantum cryptographic
-                technologies.
-            </p>
-
-        </div>
+        <div class="projects-grid">
 
 
-        <div class="project-card">
+            <div class="project-card">
 
-            <h3>FinanceFlow</h3>
+                <h3>
+                    Student Evaluation and Management System
+                </h3>
 
-            <p>
-                A web-based finance management project developed as part
-                of my software development work.
-            </p>
+                <p>
+                    An AI-enabled student evaluation and management
+                    platform combining web technologies, role-based
+                    access control, database management, and computer
+                    vision components.
+                </p>
 
-        </div>
+                <div class="technology">
+
+                    <span>Laravel</span>
+                    <span>PHP</span>
+                    <span>MySQL</span>
+                    <span>Python</span>
+                    <span>FastAPI</span>
+                    <span>OpenCV</span>
+
+                </div>
+
+                <a
+                    href="https://github.com/Mateen2627/StudentEvaluationSystem"
+                    target="_blank"
+                    class="project-link">
+
+                    View on GitHub →
+
+                </a>
+
+            </div>
 
 
-        <div class="project-card">
+            <div class="project-card">
 
-            <h3>Flutter Applications</h3>
+                <h3>
+                    QuantX
+                </h3>
 
-            <p>
-                Mobile application development using Flutter and Dart,
-                with a focus on learning modern cross-platform
-                application development.
-            </p>
+                <p>
+                    A research-oriented project exploring quantum-resilient
+                    secure communication and post-quantum cryptographic
+                    technologies.
+                </p>
+
+                <div class="technology">
+
+                    <span>Cryptography</span>
+                    <span>PQC</span>
+                    <span>Secure Communication</span>
+
+                </div>
+
+            </div>
+
+
+            <div class="project-card">
+
+                <h3>
+                    FinanceFlow
+                </h3>
+
+                <p>
+                    A web-based finance management project developed
+                    as part of my software development work.
+                </p>
+
+                <div class="technology">
+
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+
+                </div>
+
+                <a
+                    href="https://github.com/Mateen2627/financeflow"
+                    target="_blank"
+                    class="project-link">
+
+                    View on GitHub →
+
+                </a>
+
+            </div>
+
+
+            <div class="project-card">
+
+                <h3>
+                    Flutter Applications
+                </h3>
+
+                <p>
+                    Mobile application development using Flutter and
+                    Dart, focusing on modern cross-platform development.
+                </p>
+
+                <div class="technology">
+
+                    <span>Flutter</span>
+                    <span>Dart</span>
+                    <span>Android</span>
+
+                </div>
+
+                <a
+                    href="https://github.com/Mateen2627/myfirstapp"
+                    target="_blank"
+                    class="project-link">
+
+                    View on GitHub →
+
+                </a>
+
+            </div>
 
         </div>
 
     </section>
 
 
-    <!-- Skills -->
+    <!-- SKILLS -->
+
     <section id="skills">
 
-        <h2 class="section-title">Technical Skills</h2>
+        <div class="section-header">
 
-        <div class="skills">
+            <h2 class="section-title">
+                Technical Skills
+            </h2>
+
+        </div>
+
+        <div class="skills-container">
 
             <span class="skill">Python</span>
+
             <span class="skill">PHP</span>
+
             <span class="skill">Laravel</span>
+
             <span class="skill">JavaScript</span>
+
             <span class="skill">HTML</span>
+
             <span class="skill">CSS</span>
+
             <span class="skill">MySQL</span>
+
             <span class="skill">FastAPI</span>
+
             <span class="skill">REST APIs</span>
+
             <span class="skill">Git</span>
+
             <span class="skill">GitHub</span>
+
             <span class="skill">Flutter</span>
+
             <span class="skill">Dart</span>
+
             <span class="skill">Artificial Intelligence</span>
+
             <span class="skill">Machine Learning</span>
+
             <span class="skill">Generative AI</span>
+
             <span class="skill">AI Agents</span>
 
         </div>
@@ -568,16 +1076,27 @@
     </section>
 
 
-    <!-- Experience -->
+    <!-- EXPERIENCE -->
+
     <section id="experience">
 
-        <h2 class="section-title">Experience</h2>
+        <div class="section-header">
+
+            <h2 class="section-title">
+                Experience
+            </h2>
+
+        </div>
 
         <div class="experience-card">
 
-            <p class="date">Software Development</p>
+            <div class="date">
+                Software Development
+            </div>
 
-            <h3>Laravel Developer</h3>
+            <h3>
+                Laravel Developer
+            </h3>
 
             <p>
                 Experience working with Laravel-based web applications,
@@ -589,30 +1108,42 @@
     </section>
 
 
-    <!-- Contact -->
+    <!-- CONTACT -->
+
     <section id="contact" class="contact">
 
-        <h2 class="section-title">Contact</h2>
+        <div class="section-header">
 
-        <p>
-            I am interested in graduate study, research opportunities,
-            AI/ML projects, and meaningful technical collaborations.
-        </p>
+            <h2 class="section-title">
+                Let's Connect
+            </h2>
+
+            <p class="section-description">
+
+                I am interested in graduate study, research opportunities,
+                AI/ML projects, and meaningful technical collaborations.
+
+            </p>
+
+        </div>
 
         <div class="contact-links">
 
-            <a href="https://github.com/Mateen2627"
-               target="_blank">
+            <a
+                href="https://github.com/Mateen2627"
+                target="_blank">
                 GitHub
             </a>
 
-            <a href="https://www.linkedin.com/in/mateen-sajjad/"
-               target="_blank">
+            <a
+                href="https://www.linkedin.com/in/mateen-sajjad/"
+                target="_blank">
                 LinkedIn
             </a>
 
-            <a href="https://leetcode.com/u/mateen6767/"
-               target="_blank">
+            <a
+                href="https://leetcode.com/u/mateen6767/"
+                target="_blank">
                 LeetCode
             </a>
 
@@ -621,12 +1152,14 @@
     </section>
 
 
-    <!-- Footer -->
+    <!-- FOOTER -->
+
     <footer>
 
-        © 2026 Mateen Sajjad. All rights reserved.
+        © 2026 Mateen Sajjad · Computer Science & AI/ML
 
     </footer>
+
 
 </body>
 </html>
