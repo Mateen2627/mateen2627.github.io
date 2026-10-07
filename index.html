@@ -31,6 +31,12 @@
     <meta property="og:url"
         content="https://mateen2627.github.io/">
 
+    <meta property="og:image"
+        content="https://mateen2627.github.io/mateen-sajjad-profile.webp">
+
+    <meta property="og:image:alt"
+        content="Mateen Sajjad - Computer Science and AI/ML">
+
     <meta property="profile:first_name" content="Mateen">
     <meta property="profile:last_name" content="Sajjad">
 
@@ -43,6 +49,7 @@
       "givenName": "Mateen",
       "familyName": "Sajjad",
       "url": "https://mateen2627.github.io/",
+      "image": "https://mateen2627.github.io/mateen-sajjad-profile.webp",
       "jobTitle": "Computer Science Student and Developer",
       "description": "Computer Science student and developer interested in Artificial Intelligence, Machine Learning, Natural Language Processing, AI agents, and intelligent software systems.",
       "alumniOf": {
@@ -153,6 +160,24 @@
 
         .hero-content {
             max-width: 900px;
+        }
+
+        .hero-layout {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 55px;
+        }
+
+        .hero-photo {
+            width: 245px;
+            height: 245px;
+            flex: 0 0 245px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 6px solid white;
+            box-shadow: 0 18px 45px rgba(15, 23, 42, 0.16);
         }
 
         .eyebrow {
@@ -447,6 +472,19 @@
 
         @media (max-width: 850px) {
 
+            .hero-layout {
+                flex-direction: column-reverse;
+                align-items: flex-start;
+                gap: 30px;
+            }
+
+            .hero-photo {
+                width: 190px;
+                height: 190px;
+                flex-basis: 190px;
+                align-self: center;
+            }
+
             nav {
                 padding: 16px 5%;
             }
@@ -497,6 +535,8 @@
 
     <section class="hero">
 
+        <div class="hero-layout">
+
         <div class="hero-content">
 
             <div class="eyebrow">
@@ -540,6 +580,16 @@
 
         </div>
 
+        <img
+            src="mateen-sajjad-profile.webp"
+            alt="Mateen Sajjad - Computer Science and AI/ML"
+            class="hero-photo"
+            width="245"
+            height="245"
+        >
+
+        </div>
+
     </section>
 
     <section id="about">
@@ -559,15 +609,19 @@
         <div class="about-container">
 
             <p>
-                I am pursuing a Bachelor of Science in Computer Science
-                at the National University of Modern Languages (NUML),
-                Multan.
+                I am a Computer Science student at the National University
+                of Modern Languages (NUML), Multan, with a strong interest
+                in Artificial Intelligence, Machine Learning, Natural
+                Language Processing, and intelligent software systems.
             </p>
 
             <p>
-                My interests include Artificial Intelligence, Machine
-                Learning, Natural Language Processing, generative AI,
-                AI agents, and intelligent software systems.
+                My academic and practical work includes AI-enabled
+                applications, web development, APIs, mobile applications,
+                and research-oriented projects. I am particularly
+                interested in applying AI and machine learning to
+                practical problems and pursuing research through
+                graduate study. 
             </p>
 
             <p>
