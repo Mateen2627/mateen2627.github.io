@@ -7,15 +7,17 @@
     <title>Mateen Sajjad | Computer Science & AI/ML</title>
 
     <meta name="description"
-        content="Muhammad Mateen Sajjad, professionally known as Mateen Sajjad, is a Computer Science student at NUML Multan interested in Artificial Intelligence, Machine Learning, AI agents, automation, NLP and intelligent software systems.">
+        content="Muhammad Mateen Sajjad, professionally known as Mateen Sajjad, is a Computer Science student at NUML Multan interested in Artificial Intelligence, Machine Learning, NLP, AI agents, automation, and intelligent software systems.">
 
     <meta name="author" content="Muhammad Mateen Sajjad">
     <meta name="robots" content="index, follow">
+
     <link rel="canonical" href="https://mateen2627.github.io/">
 
     <meta name="google-site-verification"
         content="h9w4PP6efUmlF3X__f4TcFbUKSVev6J8piJcbQ5g7Ek">
 
+    <!-- Open Graph -->
     <meta property="og:title" content="Mateen Sajjad | Computer Science & AI/ML">
     <meta property="og:description"
         content="Computer Science student at NUML Multan focused on AI, Machine Learning, automation, AI agents, software engineering and research.">
@@ -68,6 +70,7 @@
     }
     </script>
 
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
@@ -76,33 +79,47 @@
         rel="stylesheet">
 
     <style>
+
+        /* =====================================================
+           COLOR SYSTEM
+        ===================================================== */
+
         :root {
-            --navy: #111827;
-            --navy-soft: #1e293b;
+            --primary: #7057e8;
+            --primary-dark: #5b43cf;
+            --primary-light: #a394f5;
 
-            --purple: #6d4aff;
-            --purple-dark: #5534dc;
-            --purple-light: #8b74ff;
+            --cyan: #089bb5;
+            --cyan-light: #25c6df;
 
-            --cyan: #0891b2;
-            --cyan-light: #22d3ee;
+            --navy: #172033;
+            --navy-soft: #263248;
 
-            --blue: #2563eb;
+            --text: #3f4b5f;
+            --muted: #718096;
 
             --white: #ffffff;
-            --off-white: #f8fafc;
-            --soft-purple: #f7f5ff;
-            --soft-blue: #f4f9ff;
+            --off-white: #fcfcff;
 
-            --text: #334155;
-            --muted: #64748b;
+            --lavender: #f7f5ff;
+            --blue-bg: #f3faff;
 
-            --border: #e5e7eb;
-            --border-purple: rgba(109, 74, 255, 0.18);
+            --card: rgba(255,255,255,0.92);
 
-            --shadow: 0 18px 50px rgba(15, 23, 42, 0.07);
-            --shadow-hover: 0 22px 55px rgba(109, 74, 255, 0.13);
+            --border: #e7e9f0;
+            --purple-border: rgba(112,87,232,0.18);
+
+            --shadow:
+                0 18px 50px rgba(38,42,65,0.07);
+
+            --shadow-hover:
+                0 22px 55px rgba(112,87,232,0.14);
         }
+
+
+        /* =====================================================
+           GLOBAL
+        ===================================================== */
 
         * {
             margin: 0;
@@ -116,9 +133,24 @@
 
         body {
             font-family: "Inter", sans-serif;
+
             color: var(--text);
-            background: var(--white);
+
+            background:
+                radial-gradient(
+                    circle at 10% 5%,
+                    rgba(112,87,232,0.035),
+                    transparent 24%
+                ),
+                radial-gradient(
+                    circle at 90% 15%,
+                    rgba(8,155,181,0.035),
+                    transparent 23%
+                ),
+                var(--off-white);
+
             line-height: 1.7;
+
             overflow-x: hidden;
         }
 
@@ -136,22 +168,29 @@
         }
 
         .container {
-            width: min(1160px, 92%);
+            width: min(1140px, 92%);
             margin: auto;
         }
 
-        /* ================= NAVBAR ================= */
+
+        /* =====================================================
+           NAVIGATION
+        ===================================================== */
 
         nav {
             position: sticky;
             top: 0;
+
             z-index: 1000;
 
-            background: rgba(255, 255, 255, 0.9);
+            background:
+                rgba(255,255,255,0.88);
+
             backdrop-filter: blur(18px);
             -webkit-backdrop-filter: blur(18px);
 
-            border-bottom: 1px solid rgba(226, 232, 240, 0.85);
+            border-bottom:
+                1px solid rgba(231,233,240,0.85);
         }
 
         .nav-container {
@@ -164,65 +203,110 @@
 
         .logo {
             font-family: "Space Grotesk", sans-serif;
-            font-size: 1.3rem;
+
+            font-size: 1.35rem;
+
             font-weight: 700;
 
-            background: linear-gradient(
-                90deg,
-                var(--purple),
-                var(--cyan)
-            );
+            background:
+                linear-gradient(
+                    90deg,
+                    var(--primary),
+                    var(--cyan)
+                );
 
             -webkit-background-clip: text;
             background-clip: text;
+
             color: transparent;
         }
 
         .nav-links {
             display: flex;
+
             gap: 28px;
+
             list-style: none;
         }
 
         .nav-links a {
-            color: #475569;
-            font-size: 0.88rem;
+            color: #596579;
+
+            font-size: 0.87rem;
+
             font-weight: 600;
+
             transition: 0.25s ease;
         }
 
         .nav-links a:hover {
-            color: var(--purple);
+            color: var(--primary);
         }
 
-        /* ================= HERO ================= */
+
+        /* =====================================================
+           HERO
+        ===================================================== */
 
         .hero {
             position: relative;
-            overflow: hidden;
 
-            min-height: 720px;
+            min-height: 700px;
 
             display: flex;
             align-items: center;
 
+            overflow: hidden;
+
             background:
                 radial-gradient(
-                    circle at 8% 20%,
-                    rgba(109, 74, 255, 0.09),
-                    transparent 25%
+                    circle at 7% 30%,
+                    rgba(112,87,232,0.10),
+                    transparent 27%
                 ),
                 radial-gradient(
-                    circle at 92% 25%,
-                    rgba(8, 145, 178, 0.08),
-                    transparent 25%
+                    circle at 92% 22%,
+                    rgba(8,155,181,0.09),
+                    transparent 27%
                 ),
                 linear-gradient(
                     135deg,
                     #ffffff,
-                    #faf9ff 52%,
-                    #f6fbff
+                    #fbfaff 50%,
+                    #f7fcff
                 );
+        }
+
+        /* subtle grid */
+
+        .hero::before {
+            content: "";
+
+            position: absolute;
+
+            inset: 0;
+
+            background-image:
+                linear-gradient(
+                    rgba(112,87,232,0.035) 1px,
+                    transparent 1px
+                ),
+                linear-gradient(
+                    90deg,
+                    rgba(112,87,232,0.035) 1px,
+                    transparent 1px
+                );
+
+            background-size: 55px 55px;
+
+            mask-image:
+                linear-gradient(
+                    to bottom,
+                    black,
+                    transparent 85%
+                );
+
+            pointer-events: none;
         }
 
         .hero-grid {
@@ -230,103 +314,128 @@
             z-index: 2;
 
             display: grid;
-            grid-template-columns: 1fr 1fr;
 
-            gap: 70px;
+            grid-template-columns: 1.05fr 0.95fr;
+
+            gap: 65px;
+
             align-items: center;
         }
 
         .hero-content {
-            max-width: 650px;
+            max-width: 670px;
         }
 
         .eyebrow {
             display: inline-flex;
+
             align-items: center;
+
             gap: 9px;
 
-            padding: 7px 13px;
+            padding: 8px 14px;
 
-            margin-bottom: 22px;
+            margin-bottom: 21px;
 
-            border: 1px solid var(--border-purple);
-            border-radius: 30px;
+            border-radius: 50px;
 
-            background: rgba(109, 74, 255, 0.045);
+            border:
+                1px solid var(--purple-border);
 
-            color: var(--purple);
+            background:
+                rgba(112,87,232,0.045);
+
+            color: var(--primary);
 
             font-size: 0.76rem;
+
             font-weight: 700;
-            letter-spacing: 0.02em;
         }
 
-        .status-dot {
+        .eyebrow-dot {
             width: 7px;
             height: 7px;
+
             border-radius: 50%;
 
-            background: #10b981;
+            background:
+                linear-gradient(
+                    135deg,
+                    var(--primary),
+                    var(--cyan)
+                );
 
-            box-shadow: 0 0 0 5px rgba(16, 185, 129, 0.09);
+            box-shadow:
+                0 0 0 5px rgba(112,87,232,0.08);
         }
 
         .hero h1 {
-            font-size: clamp(3.2rem, 7vw, 5.7rem);
-            line-height: 0.98;
+            font-size:
+                clamp(3.2rem, 7vw, 5.5rem);
+
+            line-height: 1;
+
             letter-spacing: -0.065em;
 
-            margin-bottom: 20px;
+            margin-bottom: 19px;
         }
 
         .gradient-text {
-            background: linear-gradient(
-                90deg,
-                var(--purple),
-                var(--blue),
-                var(--cyan)
-            );
+            background:
+                linear-gradient(
+                    90deg,
+                    var(--primary),
+                    #6f62dd,
+                    var(--cyan)
+                );
 
             -webkit-background-clip: text;
             background-clip: text;
+
             color: transparent;
         }
 
         .hero-subtitle {
-            font-size: clamp(1.1rem, 2vw, 1.35rem);
+            font-size:
+                clamp(1.1rem, 2vw, 1.35rem);
 
-            color: #475569;
+            color: #4a5568;
 
             font-weight: 600;
 
-            margin-bottom: 18px;
+            margin-bottom: 17px;
         }
 
         .hero-description {
             max-width: 650px;
 
             color: var(--muted);
-            font-size: 0.98rem;
 
-            margin-bottom: 29px;
+            font-size: 0.97rem;
+
+            margin-bottom: 28px;
         }
 
         .hero-buttons {
             display: flex;
+
             flex-wrap: wrap;
+
             gap: 12px;
         }
 
         .btn {
             display: inline-flex;
+
             align-items: center;
             justify-content: center;
 
-            padding: 12px 20px;
+            padding: 12px 21px;
 
-            border-radius: 10px;
+            border-radius: 11px;
 
             font-size: 0.86rem;
+
             font-weight: 700;
 
             transition: 0.3s ease;
@@ -338,19 +447,21 @@
             background:
                 linear-gradient(
                     135deg,
-                    var(--purple),
-                    var(--blue)
+                    var(--primary),
+                    #6556d9
                 );
 
             box-shadow:
-                0 12px 25px rgba(109, 74, 255, 0.2);
+                0 12px 28px
+                rgba(112,87,232,0.22);
         }
 
         .btn-primary:hover {
             transform: translateY(-3px);
 
             box-shadow:
-                0 18px 35px rgba(109, 74, 255, 0.27);
+                0 18px 35px
+                rgba(112,87,232,0.28);
         }
 
         .btn-secondary {
@@ -358,298 +469,402 @@
 
             background: white;
 
-            border: 1px solid var(--border);
+            border:
+                1px solid var(--border);
         }
 
         .btn-secondary:hover {
-            color: var(--purple);
-            border-color: var(--border-purple);
+            color: var(--primary);
+
+            border-color:
+                var(--purple-border);
 
             transform: translateY(-3px);
         }
 
-        /* ================= AUTOMATION VISUAL ================= */
 
-        .automation-visual {
+        /* =====================================================
+           PREMIUM AI AUTOMATION VISUAL
+        ===================================================== */
+
+        .ai-visual {
             position: relative;
 
-            min-height: 450px;
+            min-height: 455px;
 
             display: flex;
+
             align-items: center;
+
             justify-content: center;
         }
 
-        .automation-board {
+        /* outer orbit */
+
+        .orbit {
+            position: absolute;
+
+            width: 380px;
+            height: 380px;
+
+            border-radius: 50%;
+
+            border:
+                1px dashed
+                rgba(112,87,232,0.20);
+
+            animation:
+                orbitRotate 22s linear infinite;
+        }
+
+        .orbit::before,
+        .orbit::after {
+            content: "";
+
+            position: absolute;
+
+            width: 10px;
+            height: 10px;
+
+            border-radius: 50%;
+        }
+
+        .orbit::before {
+            top: 26px;
+            left: 72px;
+
+            background: var(--primary);
+
+            box-shadow:
+                0 0 0 7px
+                rgba(112,87,232,0.08),
+
+                0 0 20px
+                rgba(112,87,232,0.35);
+        }
+
+        .orbit::after {
+            right: 48px;
+            bottom: 75px;
+
+            background: var(--cyan);
+
+            box-shadow:
+                0 0 0 7px
+                rgba(8,155,181,0.08),
+
+                0 0 20px
+                rgba(8,155,181,0.35);
+        }
+
+
+        /* second orbit */
+
+        .orbit-two {
+            position: absolute;
+
+            width: 300px;
+            height: 300px;
+
+            border-radius: 50%;
+
+            border:
+                1px solid
+                rgba(8,155,181,0.10);
+
+            transform: rotate(-25deg);
+        }
+
+
+        /* center AI core */
+
+        .ai-core {
             position: relative;
 
-            width: 100%;
-            max-width: 530px;
+            z-index: 5;
 
-            padding: 30px;
+            width: 205px;
+            height: 205px;
 
-            border-radius: 24px;
+            border-radius: 42px;
+
+            display: flex;
+
+            flex-direction: column;
+
+            align-items: center;
+
+            justify-content: center;
 
             background:
                 linear-gradient(
                     145deg,
                     rgba(255,255,255,0.98),
-                    rgba(248,249,255,0.98)
+                    rgba(248,247,255,0.98)
                 );
 
-            border: 1px solid rgba(109, 74, 255, 0.14);
+            border:
+                1px solid
+                rgba(112,87,232,0.18);
 
             box-shadow:
-                0 30px 80px rgba(15, 23, 42, 0.1);
+                0 28px 65px
+                rgba(40,45,75,0.12),
+
+                inset 0 0 45px
+                rgba(112,87,232,0.035);
         }
 
-        .board-top {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-
-            margin-bottom: 25px;
-        }
-
-        .board-title {
-            font-family: "Space Grotesk", sans-serif;
-
-            font-size: 0.9rem;
-            font-weight: 700;
-
-            color: var(--navy);
-        }
-
-        .board-status {
-            display: flex;
-            align-items: center;
-            gap: 6px;
-
-            color: #059669;
-
-            font-size: 0.68rem;
-            font-weight: 700;
-        }
-
-        .board-status::before {
+        .ai-core::before {
             content: "";
 
-            width: 6px;
-            height: 6px;
-
-            border-radius: 50%;
-
-            background: #10b981;
-        }
-
-        .workflow {
-            position: relative;
-
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-
-            gap: 9px;
-
-            align-items: center;
-        }
-
-        .workflow-line {
             position: absolute;
 
-            left: 11%;
-            right: 11%;
+            inset: 11px;
 
-            top: 50%;
+            border-radius: 34px;
 
-            height: 2px;
-
-            background:
-                linear-gradient(
-                    90deg,
-                    rgba(109,74,255,0.2),
-                    var(--purple),
-                    rgba(8,145,178,0.25)
-                );
-
-            z-index: 0;
+            border:
+                1px solid
+                rgba(112,87,232,0.08);
         }
 
-        .workflow-node {
+        .ai-symbol {
             position: relative;
-            z-index: 1;
+            z-index: 2;
 
-            min-height: 112px;
+            width: 64px;
+            height: 64px;
 
             display: flex;
-            flex-direction: column;
+
             align-items: center;
             justify-content: center;
 
-            text-align: center;
+            margin-bottom: 13px;
 
-            padding: 12px 7px;
+            border-radius: 19px;
 
-            border-radius: 15px;
-
-            background: white;
-
-            border: 1px solid var(--border);
-
-            box-shadow:
-                0 8px 25px rgba(15,23,42,0.055);
-
-            transition: 0.3s ease;
-        }
-
-        .workflow-node:hover {
-            transform: translateY(-5px);
-
-            border-color: rgba(109,74,255,0.3);
-
-            box-shadow: var(--shadow-hover);
-        }
-
-        .node-icon {
-            width: 40px;
-            height: 40px;
-
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            margin-bottom: 9px;
-
-            border-radius: 11px;
-
-            color: var(--purple);
+            color: white;
 
             background:
                 linear-gradient(
                     135deg,
-                    #f3efff,
-                    #eefaff
+                    var(--primary),
+                    var(--cyan)
                 );
 
-            font-size: 0.95rem;
+            box-shadow:
+                0 13px 28px
+                rgba(112,87,232,0.24);
+
+            font-family:
+                "Space Grotesk", sans-serif;
+
+            font-size: 1.1rem;
+
+            font-weight: 700;
+        }
+
+        .ai-core h3 {
+            position: relative;
+            z-index: 2;
+
+            font-size: 1.05rem;
+
+            margin-bottom: 3px;
+        }
+
+        .ai-core p {
+            position: relative;
+            z-index: 2;
+
+            color: var(--muted);
+
+            font-size: 0.65rem;
+
+            text-align: center;
+        }
+
+
+        /* automation nodes */
+
+        .ai-node {
+            position: absolute;
+
+            z-index: 6;
+
+            min-width: 108px;
+
+            padding: 10px 13px;
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 8px;
+
+            background:
+                rgba(255,255,255,0.94);
+
+            border:
+                1px solid
+                rgba(112,87,232,0.13);
+
+            border-radius: 12px;
+
+            box-shadow:
+                0 12px 30px
+                rgba(30,35,60,0.08);
+
+            color: #536074;
+
+            font-size: 0.67rem;
+
+            font-weight: 700;
+
+            animation:
+                nodeFloat 4s ease-in-out infinite;
+        }
+
+        .node-mark {
+            width: 27px;
+            height: 27px;
+
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 8px;
+
+            color: var(--primary);
+
+            background:
+                #f2efff;
+
+            font-size: 0.57rem;
+
             font-weight: 800;
         }
 
-        .workflow-node strong {
-            font-size: 0.72rem;
-            color: var(--navy);
+        .node-one {
+            top: 50px;
+            left: 8px;
         }
 
-        .workflow-node small {
-            margin-top: 3px;
+        .node-two {
+            top: 42px;
+            right: 3px;
 
-            color: var(--muted);
-
-            font-size: 0.58rem;
+            animation-delay: 0.7s;
         }
 
-        .board-bottom {
-            margin-top: 25px;
+        .node-three {
+            bottom: 66px;
+            left: 0;
 
-            padding-top: 18px;
-
-            border-top: 1px solid var(--border);
-
-            display: flex;
-            justify-content: space-between;
-            gap: 12px;
+            animation-delay: 1.3s;
         }
 
-        .metric {
-            display: flex;
-            flex-direction: column;
+        .node-four {
+            bottom: 47px;
+            right: 7px;
+
+            animation-delay: 1.9s;
         }
 
-        .metric strong {
-            color: var(--navy);
-            font-size: 0.9rem;
-        }
 
-        .metric span {
-            color: var(--muted);
-            font-size: 0.62rem;
-        }
+        /* connection lines */
 
-        .visual-orb {
+        .connection {
             position: absolute;
 
-            width: 290px;
-            height: 290px;
+            z-index: 2;
 
-            border-radius: 50%;
+            height: 1px;
 
-            border: 1px dashed rgba(109, 74, 255, 0.18);
+            background:
+                linear-gradient(
+                    90deg,
+                    transparent,
+                    rgba(112,87,232,0.35),
+                    transparent
+                );
 
-            animation: spin 25s linear infinite;
+            transform-origin: left center;
 
-            pointer-events: none;
+            opacity: 0.65;
         }
 
-        .visual-orb::before {
-            content: "";
+        .connection-one {
+            width: 105px;
 
-            position: absolute;
+            left: 105px;
+            top: 126px;
 
-            width: 9px;
-            height: 9px;
-
-            top: 28px;
-            right: 55px;
-
-            border-radius: 50%;
-
-            background: var(--purple);
-
-            box-shadow:
-                0 0 0 7px rgba(109,74,255,0.08);
+            transform:
+                rotate(25deg);
         }
 
-        .visual-orb::after {
-            content: "";
+        .connection-two {
+            width: 105px;
 
-            position: absolute;
+            right: 105px;
+            top: 122px;
 
-            width: 8px;
-            height: 8px;
-
-            bottom: 40px;
-            left: 40px;
-
-            border-radius: 50%;
-
-            background: var(--cyan);
-
-            box-shadow:
-                0 0 0 7px rgba(8,145,178,0.08);
+            transform:
+                rotate(155deg);
         }
 
-        /* ================= SECTIONS ================= */
+        .connection-three {
+            width: 110px;
+
+            left: 105px;
+            bottom: 128px;
+
+            transform:
+                rotate(-25deg);
+        }
+
+        .connection-four {
+            width: 110px;
+
+            right: 105px;
+            bottom: 122px;
+
+            transform:
+                rotate(-155deg);
+        }
+
+
+        /* =====================================================
+           SECTIONS
+        ===================================================== */
 
         section {
             padding: 95px 0;
         }
 
         .section-white {
-            background: white;
+            background: var(--white);
         }
 
         .section-soft {
             background:
                 linear-gradient(
                     135deg,
-                    #faf9ff,
-                    #f7fbff
+                    var(--lavender),
+                    #ffffff 55%,
+                    var(--blue-bg)
                 );
         }
 
         .section-header {
             max-width: 720px;
 
-            margin: 0 auto 50px;
+            margin:
+                0 auto 48px;
 
             text-align: center;
         }
@@ -659,70 +874,80 @@
 
             margin-bottom: 9px;
 
-            color: var(--purple);
+            color: var(--primary);
 
-            font-size: 0.7rem;
+            font-size: 0.69rem;
+
             font-weight: 800;
 
-            letter-spacing: 0.14em;
+            letter-spacing: 0.15em;
+
             text-transform: uppercase;
         }
 
         .section-header h2 {
-            font-size: clamp(2rem, 4vw, 3rem);
+            font-size:
+                clamp(2rem, 4vw, 3rem);
 
             line-height: 1.15;
 
-            letter-spacing: -0.04em;
+            letter-spacing: -0.045em;
 
             margin-bottom: 12px;
         }
 
         .section-header p {
             color: var(--muted);
-            font-size: 0.94rem;
+
+            font-size: 0.91rem;
         }
 
-        /* ================= ABOUT ================= */
+
+        /* =====================================================
+           ABOUT
+        ===================================================== */
 
         .about-grid {
             display: grid;
-            grid-template-columns: 0.8fr 1.2fr;
 
-            gap: 65px;
+            grid-template-columns: 0.82fr 1.18fr;
+
+            gap: 60px;
 
             align-items: center;
         }
 
         .about-visual {
-            min-height: 400px;
+            min-height: 390px;
 
             display: flex;
+
             align-items: center;
             justify-content: center;
 
-            border-radius: 25px;
+            border-radius: 28px;
 
             background:
                 radial-gradient(
                     circle at center,
-                    rgba(109,74,255,0.1),
+                    rgba(112,87,232,0.10),
                     transparent 38%
                 ),
                 linear-gradient(
                     145deg,
-                    #faf9ff,
-                    #f3faff
+                    #fbf9ff,
+                    #f4fbff
                 );
 
-            border: 1px solid var(--border);
+            border:
+                1px solid var(--border);
 
             box-shadow: var(--shadow);
         }
 
         .profile-ring {
-            width: 230px;
-            height: 230px;
+            width: 225px;
+            height: 225px;
 
             padding: 7px;
 
@@ -731,12 +956,13 @@
             background:
                 linear-gradient(
                     135deg,
-                    var(--purple),
+                    var(--primary),
                     var(--cyan)
                 );
 
             box-shadow:
-                0 22px 60px rgba(109,74,255,0.2);
+                0 22px 55px
+                rgba(112,87,232,0.20);
         }
 
         .profile-ring img {
@@ -752,46 +978,54 @@
 
         .about-text h3 {
             font-size: 1.8rem;
-            margin-bottom: 16px;
+
+            margin-bottom: 15px;
         }
 
         .about-text p {
             color: var(--muted);
+
+            font-size: 0.91rem;
+
             margin-bottom: 15px;
-            font-size: 0.94rem;
         }
 
-        /* ================= AUTOMATION ================= */
+
+        /* =====================================================
+           AUTOMATION SECTION
+        ===================================================== */
 
         .automation-section {
             background:
                 linear-gradient(
                     135deg,
-                    #f8f7ff 0%,
-                    #ffffff 50%,
-                    #f3fbff 100%
+                    #f8f6ff,
+                    #ffffff 48%,
+                    #f4fbff
                 );
         }
 
-        .architecture {
+        .automation-main {
             position: relative;
 
-            padding: 32px;
+            padding: 38px;
 
-            margin-bottom: 35px;
+            margin-bottom: 30px;
 
-            border-radius: 25px;
+            border-radius: 27px;
 
-            background: white;
+            background:
+                rgba(255,255,255,0.9);
 
-            border: 1px solid var(--border);
+            border:
+                1px solid var(--border);
 
             box-shadow: var(--shadow);
 
             overflow: hidden;
         }
 
-        .architecture::before {
+        .automation-main::after {
             content: "";
 
             position: absolute;
@@ -799,59 +1033,67 @@
             width: 300px;
             height: 300px;
 
-            right: -130px;
-            top: -160px;
+            right: -150px;
+            bottom: -170px;
 
             border-radius: 50%;
 
             background:
                 radial-gradient(
                     circle,
-                    rgba(109,74,255,0.08),
-                    transparent 65%
+                    rgba(8,155,181,0.08),
+                    transparent 68%
                 );
         }
 
-        .architecture-heading {
+        .automation-top {
             display: flex;
+
             align-items: center;
+
             justify-content: space-between;
 
-            margin-bottom: 30px;
+            margin-bottom: 28px;
         }
 
-        .architecture-heading h3 {
+        .automation-top h3 {
             font-size: 1.15rem;
         }
 
-        .architecture-heading span {
+        .automation-top span {
             color: var(--muted);
-            font-size: 0.72rem;
+
+            font-size: 0.68rem;
         }
 
-        .architecture-flow {
+        .automation-flow {
+            position: relative;
+
             display: grid;
 
             grid-template-columns:
                 1fr
-                35px
+                30px
                 1fr
-                35px
+                30px
                 1fr
-                35px
-                1fr
-                35px
+                30px
                 1fr;
 
             align-items: center;
         }
 
-        .flow-box {
-            min-height: 120px;
+        .flow-card {
+            position: relative;
+
+            min-height: 112px;
 
             display: flex;
+
             flex-direction: column;
+
             align-items: center;
+
             justify-content: center;
 
             text-align: center;
@@ -860,123 +1102,37 @@
 
             border-radius: 15px;
 
-            background:
-                linear-gradient(
-                    145deg,
-                    #ffffff,
-                    #fafbff
-                );
-
-            border: 1px solid var(--border);
-
-            transition: 0.3s ease;
-        }
-
-        .flow-box:hover {
-            transform: translateY(-5px);
-
-            border-color: rgba(109,74,255,0.28);
-
-            box-shadow: var(--shadow-hover);
-        }
-
-        .flow-box.primary {
-            background:
-                linear-gradient(
-                    145deg,
-                    #f7f3ff,
-                    #f2fbff
-                );
-
-            border-color:
-                rgba(109,74,255,0.22);
-        }
-
-        .flow-number {
-            width: 32px;
-            height: 32px;
-
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            margin-bottom: 9px;
-
-            border-radius: 9px;
-
-            background:
-                linear-gradient(
-                    135deg,
-                    var(--purple),
-                    var(--blue)
-                );
-
-            color: white;
-
-            font-size: 0.68rem;
-            font-weight: 800;
-        }
-
-        .flow-box strong {
-            font-size: 0.72rem;
-            color: var(--navy);
-        }
-
-        .flow-box span {
-            color: var(--muted);
-            font-size: 0.57rem;
-            margin-top: 3px;
-        }
-
-        .flow-arrow {
-            text-align: center;
-
-            color: var(--purple);
-
-            font-size: 1.1rem;
-            font-weight: 800;
-        }
-
-        .automation-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-
-            gap: 18px;
-        }
-
-        .automation-card {
-            padding: 25px;
-
-            border-radius: 18px;
-
             background: white;
 
-            border: 1px solid var(--border);
-
-            box-shadow: 0 10px 35px rgba(15,23,42,0.045);
+            border:
+                1px solid var(--border);
 
             transition: 0.3s ease;
         }
 
-        .automation-card:hover {
-            transform: translateY(-7px);
+        .flow-card:hover {
+            transform: translateY(-5px);
 
-            border-color: var(--border-purple);
+            border-color:
+                var(--purple-border);
 
             box-shadow: var(--shadow-hover);
         }
 
-        .automation-icon {
-            width: 45px;
-            height: 45px;
+        .flow-icon {
+            width: 36px;
+            height: 36px;
 
             display: flex;
+
             align-items: center;
             justify-content: center;
 
-            margin-bottom: 16px;
+            margin-bottom: 8px;
 
-            border-radius: 12px;
+            border-radius: 10px;
+
+            color: var(--primary);
 
             background:
                 linear-gradient(
@@ -985,35 +1141,133 @@
                     #eefaff
                 );
 
-            color: var(--purple);
+            font-family:
+                "Space Grotesk", sans-serif;
 
-            font-size: 0.95rem;
+            font-size: 0.62rem;
+
+            font-weight: 800;
+        }
+
+        .flow-card strong {
+            color: var(--navy);
+
+            font-size: 0.7rem;
+        }
+
+        .flow-card small {
+            color: var(--muted);
+
+            font-size: 0.58rem;
+
+            margin-top: 2px;
+        }
+
+        .flow-arrow {
+            text-align: center;
+
+            color: var(--primary);
+
+            font-size: 1.1rem;
+
+            font-weight: 800;
+        }
+
+        .automation-cards {
+            display: grid;
+
+            grid-template-columns:
+                repeat(4, 1fr);
+
+            gap: 17px;
+        }
+
+        .automation-card {
+            padding: 24px;
+
+            border-radius: 18px;
+
+            background: white;
+
+            border:
+                1px solid var(--border);
+
+            box-shadow:
+                0 10px 32px
+                rgba(30,35,60,0.045);
+
+            transition: 0.3s ease;
+        }
+
+        .automation-card:hover {
+            transform: translateY(-6px);
+
+            border-color:
+                var(--purple-border);
+
+            box-shadow: var(--shadow-hover);
+        }
+
+        .automation-icon {
+            width: 43px;
+            height: 43px;
+
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            margin-bottom: 14px;
+
+            border-radius: 11px;
+
+            color: var(--primary);
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #f2efff,
+                    #eefaff
+                );
+
+            font-family:
+                "Space Grotesk", sans-serif;
+
+            font-size: 0.65rem;
+
             font-weight: 800;
         }
 
         .automation-card h3 {
-            font-size: 1rem;
-            margin-bottom: 8px;
+            font-size: 0.98rem;
+
+            margin-bottom: 7px;
         }
 
         .automation-card p {
             color: var(--muted);
-            font-size: 0.79rem;
+
+            font-size: 0.77rem;
+
             line-height: 1.65;
         }
 
-        /* ================= RESEARCH ================= */
+
+        /* =====================================================
+           RESEARCH
+        ===================================================== */
 
         .research-grid {
             display: grid;
 
-            grid-template-columns: repeat(4, 1fr);
+            grid-template-columns:
+                repeat(4, 1fr);
 
             gap: 17px;
         }
 
         .research-card {
-            padding: 25px 18px;
+            padding: 24px 17px;
 
             text-align: center;
 
@@ -1021,7 +1275,8 @@
 
             background: white;
 
-            border: 1px solid var(--border);
+            border:
+                1px solid var(--border);
 
             transition: 0.3s ease;
         }
@@ -1029,53 +1284,64 @@
         .research-card:hover {
             transform: translateY(-5px);
 
-            border-color: var(--border-purple);
+            border-color:
+                var(--purple-border);
 
             box-shadow: var(--shadow-hover);
         }
 
         .research-icon {
-            width: 44px;
-            height: 44px;
+            width: 42px;
+            height: 42px;
 
             display: flex;
+
             align-items: center;
             justify-content: center;
 
-            margin: 0 auto 12px;
+            margin: 0 auto 11px;
 
-            border-radius: 12px;
+            border-radius: 11px;
 
-            background: #f6f4ff;
+            color: var(--primary);
 
-            color: var(--purple);
+            background: #f5f2ff;
 
-            font-size: 0.85rem;
+            font-family:
+                "Space Grotesk", sans-serif;
+
+            font-size: 0.62rem;
+
             font-weight: 800;
         }
 
         .research-card h3 {
-            font-size: 0.87rem;
+            font-size: 0.82rem;
         }
 
-        /* ================= PROJECTS ================= */
+
+        /* =====================================================
+           PROJECTS
+        ===================================================== */
 
         .projects-grid {
             display: grid;
 
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns:
+                repeat(2, 1fr);
 
             gap: 22px;
         }
 
         .project-card {
-            padding: 30px;
+            padding: 29px;
 
             border-radius: 21px;
 
             background: white;
 
-            border: 1px solid var(--border);
+            border:
+                1px solid var(--border);
 
             box-shadow: var(--shadow);
 
@@ -1085,37 +1351,43 @@
         .project-card:hover {
             transform: translateY(-7px);
 
-            border-color: var(--border-purple);
+            border-color:
+                var(--purple-border);
 
             box-shadow: var(--shadow-hover);
         }
 
         .project-number {
-            margin-bottom: 13px;
+            color: var(--primary);
 
-            color: var(--purple);
+            font-size: 0.64rem;
 
-            font-size: 0.66rem;
             font-weight: 800;
 
             letter-spacing: 0.13em;
+
+            margin-bottom: 12px;
         }
 
         .project-card h3 {
-            font-size: 1.3rem;
-            margin-bottom: 10px;
+            font-size: 1.28rem;
+
+            margin-bottom: 9px;
         }
 
         .project-card p {
             color: var(--muted);
-            font-size: 0.84rem;
+
+            font-size: 0.83rem;
 
             margin-bottom: 17px;
         }
 
         .tags {
             display: flex;
+
             flex-wrap: wrap;
+
             gap: 7px;
         }
 
@@ -1124,27 +1396,34 @@
 
             border-radius: 7px;
 
-            background: #f6f4ff;
+            color: var(--primary);
 
-            color: var(--purple);
+            background: #f5f2ff;
 
-            border: 1px solid rgba(109,74,255,0.08);
+            border:
+                1px solid
+                rgba(112,87,232,0.08);
 
-            font-size: 0.66rem;
+            font-size: 0.64rem;
+
             font-weight: 700;
         }
 
-        /* ================= SKILLS ================= */
+
+        /* =====================================================
+           SKILLS
+        ===================================================== */
 
         .skills {
             display: flex;
+
             flex-wrap: wrap;
 
             justify-content: center;
 
             gap: 9px;
 
-            max-width: 920px;
+            max-width: 900px;
 
             margin: auto;
         }
@@ -1156,25 +1435,35 @@
 
             background: white;
 
-            border: 1px solid var(--border);
+            border:
+                1px solid var(--border);
 
-            color: #475569;
+            color: #536074;
 
             font-size: 0.75rem;
+
             font-weight: 600;
 
             transition: 0.25s ease;
         }
 
         .skill:hover {
-            color: var(--purple);
+            color: var(--primary);
 
-            border-color: var(--border-purple);
+            border-color:
+                var(--purple-border);
 
             transform: translateY(-3px);
+
+            box-shadow:
+                0 7px 20px
+                rgba(112,87,232,0.07);
         }
 
-        /* ================= EDUCATION ================= */
+
+        /* =====================================================
+           EDUCATION
+        ===================================================== */
 
         .education-card {
             max-width: 820px;
@@ -1183,22 +1472,24 @@
 
             padding: 34px;
 
-            border-radius: 22px;
+            border-radius: 23px;
 
             background: white;
 
-            border: 1px solid var(--border);
+            border:
+                1px solid var(--border);
 
             box-shadow: var(--shadow);
         }
 
         .education-card h3 {
             font-size: 1.4rem;
+
             margin-bottom: 6px;
         }
 
         .institution {
-            color: var(--purple);
+            color: var(--primary);
 
             font-weight: 700;
 
@@ -1207,72 +1498,70 @@
 
         .education-card p {
             color: var(--muted);
-            font-size: 0.86rem;
+
+            font-size: 0.85rem;
         }
 
-        /* ================= CONTACT ================= */
+
+        /* =====================================================
+           CONTACT
+        ===================================================== */
 
         .contact-box {
             position: relative;
+
             overflow: hidden;
 
             padding: 65px 30px;
 
             text-align: center;
 
-            border-radius: 28px;
+            border-radius: 29px;
 
             background:
+                radial-gradient(
+                    circle at 10% 25%,
+                    rgba(112,87,232,0.09),
+                    transparent 28%
+                ),
+                radial-gradient(
+                    circle at 90% 75%,
+                    rgba(8,155,181,0.08),
+                    transparent 28%
+                ),
                 linear-gradient(
                     135deg,
-                    #f8f6ff,
-                    #f4fbff
+                    #faf9ff,
+                    #f7fcff
                 );
 
-            border: 1px solid var(--border-purple);
+            border:
+                1px solid var(--purple-border);
 
             box-shadow: var(--shadow);
         }
 
-        .contact-box::before {
-            content: "";
-
-            position: absolute;
-
-            width: 250px;
-            height: 250px;
-
-            left: -120px;
-            bottom: -130px;
-
-            border-radius: 50%;
-
-            background:
-                radial-gradient(
-                    circle,
-                    rgba(109,74,255,0.1),
-                    transparent 65%
-                );
-        }
-
         .contact-box h2 {
-            font-size: clamp(2rem, 4vw, 3rem);
+            font-size:
+                clamp(2rem, 4vw, 3rem);
 
             margin-bottom: 12px;
         }
 
         .contact-box p {
-            max-width: 650px;
+            max-width: 640px;
 
-            margin: 0 auto 25px;
+            margin:
+                0 auto 25px;
 
             color: var(--muted);
 
-            font-size: 0.9rem;
+            font-size: 0.89rem;
         }
 
         .contact-links {
             display: flex;
+
             flex-wrap: wrap;
 
             justify-content: center;
@@ -1287,32 +1576,39 @@
 
             background: white;
 
-            border: 1px solid var(--border);
+            border:
+                1px solid var(--border);
 
-            color: #475569;
+            color: #536074;
 
-            font-size: 0.76rem;
+            font-size: 0.75rem;
+
             font-weight: 700;
 
             transition: 0.25s ease;
         }
 
         .contact-link:hover {
-            color: var(--purple);
+            color: var(--primary);
 
-            border-color: var(--border-purple);
+            border-color:
+                var(--purple-border);
 
             transform: translateY(-3px);
         }
 
-        /* ================= FOOTER ================= */
+
+        /* =====================================================
+           FOOTER
+        ===================================================== */
 
         footer {
             padding: 28px 0;
 
             background: #f8fafc;
 
-            border-top: 1px solid var(--border);
+            border-top:
+                1px solid var(--border);
 
             text-align: center;
 
@@ -1322,12 +1618,15 @@
         }
 
         footer strong {
-            color: var(--purple);
+            color: var(--primary);
         }
 
-        /* ================= ANIMATION ================= */
 
-        @keyframes spin {
+        /* =====================================================
+           ANIMATIONS
+        ===================================================== */
+
+        @keyframes orbitRotate {
             from {
                 transform: rotate(0deg);
             }
@@ -1337,18 +1636,33 @@
             }
         }
 
-        /* ================= RESPONSIVE ================= */
+        @keyframes nodeFloat {
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-7px);
+            }
+        }
+
+
+        /* =====================================================
+           RESPONSIVE
+        ===================================================== */
 
         @media (max-width: 1000px) {
 
             .hero-grid {
                 grid-template-columns: 1fr;
 
-                gap: 45px;
+                gap: 40px;
             }
 
             .hero-content {
                 text-align: center;
+
                 margin: auto;
             }
 
@@ -1361,8 +1675,8 @@
                 justify-content: center;
             }
 
-            .automation-visual {
-                min-height: 400px;
+            .ai-visual {
+                min-height: 420px;
             }
 
             .about-grid {
@@ -1371,67 +1685,108 @@
                 gap: 40px;
             }
 
-            .automation-grid {
-                grid-template-columns: repeat(2, 1fr);
+            .automation-cards {
+                grid-template-columns:
+                    repeat(2, 1fr);
             }
 
             .research-grid {
-                grid-template-columns: repeat(2, 1fr);
+                grid-template-columns:
+                    repeat(2, 1fr);
             }
         }
 
-        @media (max-width: 700px) {
+
+        @media (max-width: 720px) {
 
             .nav-links {
                 display: none;
             }
 
             .hero {
-                padding: 75px 0;
+                min-height: auto;
+
+                padding: 80px 0;
             }
 
             .hero h1 {
-                font-size: 3.25rem;
+                font-size: 3.2rem;
             }
 
-            .automation-board {
-                padding: 20px;
+            .ai-visual {
+                min-height: 390px;
             }
 
-            .workflow {
-                grid-template-columns: repeat(2, 1fr);
-
-                gap: 12px;
+            .orbit {
+                width: 315px;
+                height: 315px;
             }
 
-            .workflow-line {
+            .orbit-two {
+                width: 250px;
+                height: 250px;
+            }
+
+            .ai-core {
+                width: 180px;
+                height: 180px;
+            }
+
+            .ai-symbol {
+                width: 55px;
+                height: 55px;
+            }
+
+            .ai-node {
+                min-width: 95px;
+
+                padding: 8px 10px;
+
+                font-size: 0.61rem;
+            }
+
+            .node-one {
+                left: 0;
+                top: 35px;
+            }
+
+            .node-two {
+                right: 0;
+                top: 30px;
+            }
+
+            .node-three {
+                left: 0;
+                bottom: 55px;
+            }
+
+            .node-four {
+                right: 0;
+                bottom: 40px;
+            }
+
+            .connection {
                 display: none;
-            }
-
-            .workflow-node {
-                min-height: 100px;
-            }
-
-            .board-bottom {
-                flex-wrap: wrap;
-            }
-
-            .visual-orb {
-                width: 270px;
-                height: 270px;
             }
 
             section {
                 padding: 75px 0;
             }
 
-            .architecture {
-                padding: 22px;
+            .automation-main {
+                padding: 23px;
             }
 
-            .architecture-flow {
-                grid-template-columns: 1fr;
+            .automation-top {
+                align-items: flex-start;
 
+                flex-direction: column;
+
+                gap: 4px;
+            }
+
+            .automation-flow {
+                grid-template-columns: 1fr;
                 gap: 8px;
             }
 
@@ -1439,55 +1794,58 @@
                 transform: rotate(90deg);
             }
 
-            .flow-box {
-                min-height: 90px;
+            .flow-card {
+                min-height: 85px;
             }
 
-            .automation-grid,
+            .automation-cards,
             .projects-grid {
                 grid-template-columns: 1fr;
             }
 
             .research-grid {
-                grid-template-columns: repeat(2, 1fr);
+                grid-template-columns:
+                    repeat(2, 1fr);
+            }
+        }
+
+
+        @media (max-width: 460px) {
+
+            .hero h1 {
+                font-size: 2.8rem;
+            }
+
+            .research-grid {
+                grid-template-columns: 1fr;
             }
 
             .about-visual {
-                min-height: 330px;
+                min-height: 320px;
             }
 
             .profile-ring {
                 width: 190px;
                 height: 190px;
             }
-        }
-
-        @media (max-width: 450px) {
-
-            .hero h1 {
-                font-size: 2.8rem;
-            }
-
-            .workflow {
-                grid-template-columns: 1fr 1fr;
-            }
-
-            .research-grid {
-                grid-template-columns: 1fr;
-            }
 
             .contact-box {
                 padding: 50px 18px;
             }
         }
+
     </style>
 </head>
 
 <body>
 
-    <!-- ================= NAVIGATION ================= -->
+
+    <!-- =====================================================
+         NAVIGATION
+    ===================================================== -->
 
     <nav>
+
         <div class="container nav-container">
 
             <a href="#home" class="logo">
@@ -1495,58 +1853,101 @@
             </a>
 
             <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#automation">Automation</a></li>
-                <li><a href="#research">Research</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
+
+                <li>
+                    <a href="#about">About</a>
+                </li>
+
+                <li>
+                    <a href="#automation">Automation</a>
+                </li>
+
+                <li>
+                    <a href="#research">Research</a>
+                </li>
+
+                <li>
+                    <a href="#projects">Projects</a>
+                </li>
+
+                <li>
+                    <a href="#skills">Skills</a>
+                </li>
+
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+
             </ul>
 
         </div>
+
     </nav>
 
 
-    <!-- ================= HERO ================= -->
+    <!-- =====================================================
+         HERO
+    ===================================================== -->
 
     <header class="hero" id="home">
 
         <div class="container hero-grid">
 
+
             <div class="hero-content">
 
                 <div class="eyebrow">
-                    <span class="status-dot"></span>
+
+                    <span class="eyebrow-dot"></span>
+
                     AI • ML • Automation • Software Engineering
+
                 </div>
 
+
                 <h1>
+
                     Mateen
+
                     <span class="gradient-text">
                         Sajjad
                     </span>
+
                 </h1>
 
+
                 <div class="hero-subtitle">
+
                     Computer Science Student & AI/ML Enthusiast
+
                 </div>
 
+
                 <p class="hero-description">
-                    I am Muhammad Mateen Sajjad, professionally known as
-                    Mateen Sajjad, a Computer Science student at
+
+                    I am Muhammad Mateen Sajjad, professionally known
+                    as Mateen Sajjad, a Computer Science student at
                     <strong>NUML Multan</strong> with interests in
                     Artificial Intelligence, Machine Learning,
                     AI agents, automation, software engineering,
                     and intelligent software systems.
+
                 </p>
+
 
                 <div class="hero-buttons">
 
-                    <a href="#projects" class="btn btn-primary">
+                    <a
+                        href="#projects"
+                        class="btn btn-primary"
+                    >
                         Explore Projects
                     </a>
 
-                    <a href="#contact" class="btn btn-secondary">
+                    <a
+                        href="#contact"
+                        class="btn btn-secondary"
+                    >
                         Connect With Me
                     </a>
 
@@ -1555,113 +1956,93 @@
             </div>
 
 
-            <!-- PROFESSIONAL AUTOMATION VISUAL -->
+            <!-- =================================================
+                 AI AUTOMATION VISUAL
+            ================================================== -->
 
-            <div class="automation-visual">
+            <div class="ai-visual">
 
-                <div class="visual-orb"></div>
 
-                <div class="automation-board">
+                <div class="orbit"></div>
 
-                    <div class="board-top">
+                <div class="orbit-two"></div>
 
-                        <div class="board-title">
-                            AI Automation Workflow
-                        </div>
 
-                        <div class="board-status">
-                            System Active
-                        </div>
+                <!-- connections -->
 
+                <div class="connection connection-one"></div>
+
+                <div class="connection connection-two"></div>
+
+                <div class="connection connection-three"></div>
+
+                <div class="connection connection-four"></div>
+
+
+                <!-- center -->
+
+                <div class="ai-core">
+
+                    <div class="ai-symbol">
+                        AI
                     </div>
 
+                    <h3>
+                        AI Automation
+                    </h3>
 
-                    <div class="workflow">
-
-                        <div class="workflow-line"></div>
-
-                        <div class="workflow-node">
-
-                            <div class="node-icon">
-                                01
-                            </div>
-
-                            <strong>Trigger</strong>
-
-                            <small>
-                                Input / Event
-                            </small>
-
-                        </div>
-
-
-                        <div class="workflow-node">
-
-                            <div class="node-icon">
-                                AI
-                            </div>
-
-                            <strong>Agent</strong>
-
-                            <small>
-                                Reasoning
-                            </small>
-
-                        </div>
-
-
-                        <div class="workflow-node">
-
-                            <div class="node-icon">
-                                API
-                            </div>
-
-                            <strong>Tools</strong>
-
-                            <small>
-                                APIs / Data
-                            </small>
-
-                        </div>
-
-
-                        <div class="workflow-node">
-
-                            <div class="node-icon">
-                                ✓
-                            </div>
-
-                            <strong>Action</strong>
-
-                            <small>
-                                Automated Result
-                            </small>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="board-bottom">
-
-                        <div class="metric">
-                            <strong>AI Agents</strong>
-                            <span>Intelligent workflows</span>
-                        </div>
-
-                        <div class="metric">
-                            <strong>APIs</strong>
-                            <span>Connected systems</span>
-                        </div>
-
-                        <div class="metric">
-                            <strong>Automation</strong>
-                            <span>Reduced manual work</span>
-                        </div>
-
-                    </div>
+                    <p>
+                        Agents • Tools • Workflows
+                    </p>
 
                 </div>
+
+
+                <!-- nodes -->
+
+                <div class="ai-node node-one">
+
+                    <div class="node-mark">
+                        IN
+                    </div>
+
+                    Input
+
+                </div>
+
+
+                <div class="ai-node node-two">
+
+                    <div class="node-mark">
+                        AG
+                    </div>
+
+                    AI Agent
+
+                </div>
+
+
+                <div class="ai-node node-three">
+
+                    <div class="node-mark">
+                        API
+                    </div>
+
+                    Tools & APIs
+
+                </div>
+
+
+                <div class="ai-node node-four">
+
+                    <div class="node-mark">
+                        ✓
+                    </div>
+
+                    Automated Result
+
+                </div>
+
 
             </div>
 
@@ -1670,11 +2051,14 @@
     </header>
 
 
-    <!-- ================= ABOUT ================= -->
+    <!-- =====================================================
+         ABOUT
+    ===================================================== -->
 
     <section id="about" class="section-white">
 
         <div class="container">
+
 
             <div class="section-header">
 
@@ -1696,6 +2080,7 @@
 
 
             <div class="about-grid">
+
 
                 <div class="about-visual">
 
@@ -1719,15 +2104,21 @@
 
                     <p>
                         I am a Computer Science student at the
-                        <strong>National University of Modern Languages
-                        (NUML), Multan</strong>.
+                        <strong>
+                            National University of Modern Languages
+                            (NUML), Multan
+                        </strong>.
                     </p>
 
                     <p>
                         My primary interests are
-                        <strong>Artificial Intelligence,
-                        Machine Learning, Natural Language Processing,
-                        Generative AI, AI agents and automation</strong>.
+                        <strong>
+                            Artificial Intelligence,
+                            Machine Learning,
+                            Natural Language Processing,
+                            Generative AI,
+                            AI agents and automation
+                        </strong>.
                     </p>
 
                     <p>
@@ -1751,11 +2142,17 @@
     </section>
 
 
-    <!-- ================= AUTOMATION ================= -->
+    <!-- =====================================================
+         AUTOMATION
+    ===================================================== -->
 
-    <section id="automation" class="automation-section">
+    <section
+        id="automation"
+        class="automation-section"
+    >
 
         <div class="container">
+
 
             <div class="section-header">
 
@@ -1764,47 +2161,50 @@
                 </span>
 
                 <h2>
-                    Designing Intelligent Workflows
+                    Intelligent Automation Systems
                 </h2>
 
                 <p>
-                    Exploring AI agents and automation systems that
-                    connect models, tools, APIs and real-world actions.
+                    Exploring how AI agents, tools, APIs and
+                    workflows can work together to automate
+                    complex tasks.
                 </p>
 
             </div>
 
 
-            <div class="architecture">
+            <div class="automation-main">
 
-                <div class="architecture-heading">
+
+                <div class="automation-top">
 
                     <h3>
-                        Automation Architecture
+                        AI Agent Workflow
                     </h3>
 
                     <span>
-                        Trigger → Reason → Integrate → Execute
+                        Intelligent Input → Reasoning → Action
                     </span>
 
                 </div>
 
 
-                <div class="architecture-flow">
+                <div class="automation-flow">
 
-                    <div class="flow-box">
 
-                        <div class="flow-number">
+                    <div class="flow-card">
+
+                        <div class="flow-icon">
                             01
                         </div>
 
                         <strong>
-                            Input
+                            Trigger
                         </strong>
 
-                        <span>
+                        <small>
                             User / Event
-                        </span>
+                        </small>
 
                     </div>
 
@@ -1814,19 +2214,19 @@
                     </div>
 
 
-                    <div class="flow-box primary">
+                    <div class="flow-card">
 
-                        <div class="flow-number">
-                            02
+                        <div class="flow-icon">
+                            AI
                         </div>
 
                         <strong>
                             AI Agent
                         </strong>
 
-                        <span>
+                        <small>
                             Reasoning
-                        </span>
+                        </small>
 
                     </div>
 
@@ -1836,19 +2236,19 @@
                     </div>
 
 
-                    <div class="flow-box">
+                    <div class="flow-card">
 
-                        <div class="flow-number">
-                            03
+                        <div class="flow-icon">
+                            API
                         </div>
 
                         <strong>
                             Tools & APIs
                         </strong>
 
-                        <span>
+                        <small>
                             Data / Services
-                        </span>
+                        </small>
 
                     </div>
 
@@ -1858,55 +2258,35 @@
                     </div>
 
 
-                    <div class="flow-box">
+                    <div class="flow-card">
 
-                        <div class="flow-number">
-                            04
+                        <div class="flow-icon">
+                            ✓
                         </div>
 
                         <strong>
-                            Automation
+                            Automated Action
                         </strong>
 
-                        <span>
-                            Workflow
-                        </span>
+                        <small>
+                            Final Result
+                        </small>
 
                     </div>
 
-
-                    <div class="flow-arrow">
-                        →
-                    </div>
-
-
-                    <div class="flow-box primary">
-
-                        <div class="flow-number">
-                            05
-                        </div>
-
-                        <strong>
-                            Action
-                        </strong>
-
-                        <span>
-                            Intelligent Result
-                        </span>
-
-                    </div>
 
                 </div>
 
             </div>
 
 
-            <div class="automation-grid">
+            <div class="automation-cards">
+
 
                 <div class="automation-card">
 
                     <div class="automation-icon">
-                        AI
+                        AG
                     </div>
 
                     <h3>
@@ -1914,8 +2294,9 @@
                     </h3>
 
                     <p>
-                        Exploring intelligent agents that can reason,
-                        interact with tools and complete multi-step tasks.
+                        Exploring intelligent agents capable of
+                        reasoning, using tools and completing
+                        multi-step tasks.
                     </p>
 
                 </div>
@@ -1946,12 +2327,12 @@
                     </div>
 
                     <h3>
-                        API & Tool Integration
+                        API Integration
                     </h3>
 
                     <p>
-                        Connecting intelligent systems with APIs,
-                        databases and external tools.
+                        Connecting AI systems with APIs, databases
+                        and external tools to perform useful actions.
                     </p>
 
                 </div>
@@ -1960,7 +2341,7 @@
                 <div class="automation-card">
 
                     <div class="automation-icon">
-                        DS
+                        INT
                     </div>
 
                     <h3>
@@ -1968,11 +2349,12 @@
                     </h3>
 
                     <p>
-                        Transforming information and data into
-                        useful automated decisions and actions.
+                        Turning information and data into useful
+                        automated decisions and intelligent actions.
                     </p>
 
                 </div>
+
 
             </div>
 
@@ -1981,11 +2363,14 @@
     </section>
 
 
-    <!-- ================= RESEARCH ================= -->
+    <!-- =====================================================
+         RESEARCH
+    ===================================================== -->
 
     <section id="research" class="section-white">
 
         <div class="container">
+
 
             <div class="section-header">
 
@@ -1998,8 +2383,8 @@
                 </h2>
 
                 <p>
-                    Research interests spanning AI, intelligent
-                    systems, software and secure computing.
+                    Research interests spanning AI,
+                    intelligent systems, software and security.
                 </p>
 
             </div>
@@ -2007,45 +2392,110 @@
 
             <div class="research-grid">
 
-                <div class="research-card">
-                    <div class="research-icon">AI</div>
-                    <h3>Artificial Intelligence</h3>
-                </div>
 
                 <div class="research-card">
-                    <div class="research-icon">ML</div>
-                    <h3>Machine Learning</h3>
+
+                    <div class="research-icon">
+                        AI
+                    </div>
+
+                    <h3>
+                        Artificial Intelligence
+                    </h3>
+
                 </div>
 
-                <div class="research-card">
-                    <div class="research-icon">NLP</div>
-                    <h3>Natural Language Processing</h3>
-                </div>
 
                 <div class="research-card">
-                    <div class="research-icon">GEN</div>
-                    <h3>Generative AI</h3>
+
+                    <div class="research-icon">
+                        ML
+                    </div>
+
+                    <h3>
+                        Machine Learning
+                    </h3>
+
                 </div>
 
-                <div class="research-card">
-                    <div class="research-icon">AG</div>
-                    <h3>AI Agents</h3>
-                </div>
 
                 <div class="research-card">
-                    <div class="research-icon">CV</div>
-                    <h3>Computer Vision</h3>
+
+                    <div class="research-icon">
+                        NLP
+                    </div>
+
+                    <h3>
+                        Natural Language Processing
+                    </h3>
+
                 </div>
 
-                <div class="research-card">
-                    <div class="research-icon">SEC</div>
-                    <h3>Secure Computing</h3>
-                </div>
 
                 <div class="research-card">
-                    <div class="research-icon">PQC</div>
-                    <h3>Post-Quantum Computing</h3>
+
+                    <div class="research-icon">
+                        GEN
+                    </div>
+
+                    <h3>
+                        Generative AI
+                    </h3>
+
                 </div>
+
+
+                <div class="research-card">
+
+                    <div class="research-icon">
+                        AG
+                    </div>
+
+                    <h3>
+                        AI Agents
+                    </h3>
+
+                </div>
+
+
+                <div class="research-card">
+
+                    <div class="research-icon">
+                        CV
+                    </div>
+
+                    <h3>
+                        Computer Vision
+                    </h3>
+
+                </div>
+
+
+                <div class="research-card">
+
+                    <div class="research-icon">
+                        SEC
+                    </div>
+
+                    <h3>
+                        Secure Computing
+                    </h3>
+
+                </div>
+
+
+                <div class="research-card">
+
+                    <div class="research-icon">
+                        PQC
+                    </div>
+
+                    <h3>
+                        Post-Quantum Computing
+                    </h3>
+
+                </div>
+
 
             </div>
 
@@ -2054,11 +2504,14 @@
     </section>
 
 
-    <!-- ================= PROJECTS ================= -->
+    <!-- =====================================================
+         PROJECTS
+    ===================================================== -->
 
     <section id="projects" class="section-soft">
 
         <div class="container">
+
 
             <div class="section-header">
 
@@ -2080,6 +2533,7 @@
 
             <div class="projects-grid">
 
+
                 <div class="project-card">
 
                     <div class="project-number">
@@ -2097,11 +2551,27 @@
                     </p>
 
                     <div class="tags">
-                        <span class="tag">AI</span>
-                        <span class="tag">Python</span>
-                        <span class="tag">FastAPI</span>
-                        <span class="tag">Laravel</span>
-                        <span class="tag">Computer Vision</span>
+
+                        <span class="tag">
+                            AI
+                        </span>
+
+                        <span class="tag">
+                            Python
+                        </span>
+
+                        <span class="tag">
+                            FastAPI
+                        </span>
+
+                        <span class="tag">
+                            Laravel
+                        </span>
+
+                        <span class="tag">
+                            Computer Vision
+                        </span>
+
                     </div>
 
                 </div>
@@ -2124,10 +2594,23 @@
                     </p>
 
                     <div class="tags">
-                        <span class="tag">PQC</span>
-                        <span class="tag">Cryptography</span>
-                        <span class="tag">Security</span>
-                        <span class="tag">Research</span>
+
+                        <span class="tag">
+                            PQC
+                        </span>
+
+                        <span class="tag">
+                            Cryptography
+                        </span>
+
+                        <span class="tag">
+                            Security
+                        </span>
+
+                        <span class="tag">
+                            Research
+                        </span>
+
                     </div>
 
                 </div>
@@ -2150,10 +2633,23 @@
                     </p>
 
                     <div class="tags">
-                        <span class="tag">AI</span>
-                        <span class="tag">Python</span>
-                        <span class="tag">NLP</span>
-                        <span class="tag">PDF</span>
+
+                        <span class="tag">
+                            AI
+                        </span>
+
+                        <span class="tag">
+                            Python
+                        </span>
+
+                        <span class="tag">
+                            NLP
+                        </span>
+
+                        <span class="tag">
+                            PDF
+                        </span>
+
                     </div>
 
                 </div>
@@ -2176,12 +2672,23 @@
                     </p>
 
                     <div class="tags">
-                        <span class="tag">Web Development</span>
-                        <span class="tag">PHP</span>
-                        <span class="tag">MySQL</span>
+
+                        <span class="tag">
+                            Web Development
+                        </span>
+
+                        <span class="tag">
+                            PHP
+                        </span>
+
+                        <span class="tag">
+                            MySQL
+                        </span>
+
                     </div>
 
                 </div>
+
 
             </div>
 
@@ -2190,11 +2697,14 @@
     </section>
 
 
-    <!-- ================= SKILLS ================= -->
+    <!-- =====================================================
+         SKILLS
+    ===================================================== -->
 
     <section id="skills" class="section-white">
 
         <div class="container">
+
 
             <div class="section-header">
 
@@ -2224,13 +2734,30 @@
                 <span class="skill">MySQL</span>
                 <span class="skill">REST APIs</span>
 
-                <span class="skill">Artificial Intelligence</span>
-                <span class="skill">Machine Learning</span>
-                <span class="skill">Generative AI</span>
-                <span class="skill">AI Agents</span>
-                <span class="skill">Automation</span>
+                <span class="skill">
+                    Artificial Intelligence
+                </span>
 
-                <span class="skill">Computer Vision</span>
+                <span class="skill">
+                    Machine Learning
+                </span>
+
+                <span class="skill">
+                    Generative AI
+                </span>
+
+                <span class="skill">
+                    AI Agents
+                </span>
+
+                <span class="skill">
+                    Automation
+                </span>
+
+                <span class="skill">
+                    Computer Vision
+                </span>
+
                 <span class="skill">Git</span>
                 <span class="skill">GitHub</span>
                 <span class="skill">VS Code</span>
@@ -2242,11 +2769,14 @@
     </section>
 
 
-    <!-- ================= EDUCATION ================= -->
+    <!-- =====================================================
+         EDUCATION
+    ===================================================== -->
 
     <section class="section-soft">
 
         <div class="container">
+
 
             <div class="section-header">
 
@@ -2289,11 +2819,14 @@
     </section>
 
 
-    <!-- ================= CONTACT ================= -->
+    <!-- =====================================================
+         CONTACT
+    ===================================================== -->
 
     <section id="contact" class="section-white">
 
         <div class="container">
+
 
             <div class="contact-box">
 
@@ -2364,7 +2897,9 @@
     </section>
 
 
-    <!-- ================= FOOTER ================= -->
+    <!-- =====================================================
+         FOOTER
+    ===================================================== -->
 
     <footer>
 
@@ -2377,6 +2912,7 @@
         </div>
 
     </footer>
+
 
 </body>
 </html>
