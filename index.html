@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Mateen Sajjad | Computer Science & AI/ML</title>
@@ -38,6 +37,11 @@
 
     <meta property="profile:first_name" content="Mateen">
     <meta property="profile:last_name" content="Sajjad">
+
+
+    <!-- =====================================================
+         STRUCTURED DATA
+    ====================================================== -->
 
     <script type="application/ld+json">
     {
@@ -80,1794 +84,2011 @@
     }
     </script>
 
-<style>
 
-/* =========================================================
-   MODERN PREMIUM DESIGN
-========================================================= */
+    <style>
 
-:root {
-    --primary: #4f46e5;
-    --primary-light: #818cf8;
-    --primary-dark: #3730a3;
+        /* =====================================================
+           PREMIUM DARK AI / ML THEME
+        ====================================================== */
 
-    --cyan: #06b6d4;
-    --cyan-light: #22d3ee;
+        :root {
+            --primary: #8b5cf6;
+            --primary-light: #a78bfa;
+            --primary-dark: #6d28d9;
 
-    --dark: #0f172a;
-    --dark-2: #1e293b;
+            --cyan: #06b6d4;
+            --cyan-light: #22d3ee;
 
-    --text: #334155;
-    --muted: #64748b;
+            --bg: #050816;
+            --bg-section: #080d20;
+            --bg-section-2: #0b1128;
 
-    --white: #ffffff;
-    --light: #f8fafc;
-    --light-blue: #eef2ff;
+            --card: #0d1530;
+            --card-2: #111936;
 
-    --border: #e2e8f0;
+            --text: #e5e7eb;
+            --text-light: #cbd5e1;
+            --muted: #94a3b8;
 
-    --shadow:
-        0 10px 30px rgba(15, 23, 42, 0.07);
+            --white: #ffffff;
 
-    --shadow-hover:
-        0 22px 50px rgba(79, 70, 229, 0.16);
+            --border: rgba(139, 92, 246, 0.22);
 
-    --transition: 0.3s ease;
-}
+            --shadow:
+                0 18px 50px rgba(0, 0, 0, 0.35);
 
+            --shadow-hover:
+                0 25px 65px rgba(139, 92, 246, 0.25);
 
-/* =========================================================
-   RESET
-========================================================= */
+            --transition: 0.3s ease;
+        }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-}
 
-body {
-    font-family:
-        Inter,
-        Arial,
-        Helvetica,
-        sans-serif;
+        /* =====================================================
+           RESET
+        ====================================================== */
 
-    color: var(--text);
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
 
-    background:
-        linear-gradient(
-            180deg,
-            #ffffff 0%,
-            #f8fafc 100%
-        );
+        html {
+            background: var(--bg);
+        }
 
-    line-height: 1.7;
+        body {
+            font-family:
+                Inter,
+                Arial,
+                Helvetica,
+                sans-serif;
 
-    overflow-x: hidden;
-}
+            color: var(--text);
 
-a {
-    text-decoration: none;
-}
+            background:
+                radial-gradient(
+                    circle at 15% 10%,
+                    rgba(139, 92, 246, 0.10),
+                    transparent 30%
+                ),
+                radial-gradient(
+                    circle at 85% 45%,
+                    rgba(6, 182, 212, 0.07),
+                    transparent 30%
+                ),
+                var(--bg);
 
+            line-height: 1.7;
 
-/* =========================================================
-   NAVIGATION
-========================================================= */
+            overflow-x: hidden;
+        }
 
-nav {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+        a {
+            text-decoration: none;
+        }
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 
-    padding: 17px 8%;
+        /* =====================================================
+           NAVIGATION
+        ====================================================== */
 
-    background:
-        rgba(255,255,255,0.82);
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
 
-    backdrop-filter: blur(18px);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
 
-    -webkit-backdrop-filter: blur(18px);
+            padding: 18px 8%;
 
-    border-bottom:
-        1px solid rgba(226,232,240,0.8);
+            background:
+                rgba(5, 8, 22, 0.88);
 
-    box-shadow:
-        0 5px 25px rgba(15,23,42,0.05);
-}
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
 
-.logo {
-    font-size: 23px;
-    font-weight: 800;
+            border-bottom:
+                1px solid rgba(139, 92, 246, 0.18);
 
-    color: var(--dark);
+            box-shadow:
+                0 10px 35px rgba(0, 0, 0, 0.30);
+        }
 
-    transition:
-        transform var(--transition),
-        color var(--transition);
-}
+        .logo {
+            font-size: 23px;
+            font-weight: 800;
 
-.logo span {
-    background:
-        linear-gradient(
-            90deg,
-            var(--primary),
-            var(--cyan)
-        );
+            color: white;
 
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
+            transition:
+                transform var(--transition);
+        }
 
-.logo:hover {
-    transform: translateY(-2px) scale(1.02);
-}
+        .logo span {
+            background:
+                linear-gradient(
+                    90deg,
+                    var(--primary-light),
+                    var(--cyan-light)
+                );
 
-nav ul {
-    display: flex;
-    gap: 25px;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
 
-    list-style: none;
-}
+        .logo:hover {
+            transform:
+                translateY(-2px)
+                scale(1.04);
+        }
 
-nav ul a {
-    position: relative;
+        nav ul {
+            display: flex;
+            gap: 25px;
 
-    color: var(--text);
+            list-style: none;
+        }
 
-    font-size: 14px;
-    font-weight: 600;
+        nav ul a {
+            position: relative;
 
-    transition:
-        color var(--transition);
-}
+            color: #cbd5e1;
 
-nav ul a::after {
-    content: "";
+            font-size: 14px;
+            font-weight: 600;
 
-    position: absolute;
+            transition:
+                color var(--transition);
+        }
 
-    left: 50%;
-    bottom: -8px;
+        nav ul a::after {
+            content: "";
 
-    width: 0;
-    height: 3px;
+            position: absolute;
 
-    border-radius: 10px;
+            left: 50%;
+            bottom: -8px;
 
-    background:
-        linear-gradient(
-            90deg,
-            var(--primary),
-            var(--cyan)
-        );
+            width: 0;
+            height: 3px;
 
-    transform: translateX(-50%);
+            border-radius: 10px;
 
-    transition:
-        width var(--transition);
-}
+            background:
+                linear-gradient(
+                    90deg,
+                    var(--primary),
+                    var(--cyan)
+                );
 
-nav ul a:hover {
-    color: var(--primary);
-}
+            transform: translateX(-50%);
 
-nav ul a:hover::after {
-    width: 100%;
-}
+            transition:
+                width var(--transition);
+        }
 
+        nav ul a:hover {
+            color: white;
+        }
 
-/* =========================================================
-   HERO
-========================================================= */
+        nav ul a:hover::after {
+            width: 100%;
+        }
 
-.hero {
-    position: relative;
 
-    min-height: 90vh;
+        /* =====================================================
+           HERO
+        ====================================================== */
 
-    display: flex;
-    align-items: center;
+        .hero {
+            position: relative;
 
-    padding: 100px 8%;
+            min-height: 90vh;
 
-    overflow: hidden;
+            display: flex;
+            align-items: center;
 
-    background:
-        radial-gradient(
-            circle at 85% 15%,
-            rgba(99,102,241,0.22),
-            transparent 28%
-        ),
+            padding: 100px 8%;
 
-        radial-gradient(
-            circle at 10% 85%,
-            rgba(6,182,212,0.15),
-            transparent 28%
-        ),
+            overflow: hidden;
 
-        linear-gradient(
-            135deg,
-            #ffffff,
-            #eef2ff
-        );
-}
+            background:
+                radial-gradient(
+                    circle at 80% 20%,
+                    rgba(139, 92, 246, 0.25),
+                    transparent 28%
+                ),
+                radial-gradient(
+                    circle at 15% 80%,
+                    rgba(6, 182, 212, 0.14),
+                    transparent 28%
+                ),
+                linear-gradient(
+                    135deg,
+                    #050816,
+                    #0b1028
+                );
+        }
 
-.hero::before {
-    content: "";
+        .hero::before {
+            content: "";
 
-    position: absolute;
+            position: absolute;
 
-    width: 350px;
-    height: 350px;
+            width: 450px;
+            height: 450px;
 
-    top: -150px;
-    right: -120px;
+            top: -200px;
+            right: -120px;
 
-    border-radius: 50%;
+            border-radius: 50%;
 
-    background:
-        linear-gradient(
-            135deg,
-            rgba(79,70,229,0.12),
-            rgba(6,182,212,0.10)
-        );
+            background:
+                radial-gradient(
+                    circle,
+                    rgba(139, 92, 246, 0.22),
+                    transparent 70%
+                );
 
-    filter: blur(5px);
-}
+            filter: blur(10px);
+        }
 
-.hero-layout {
-    position: relative;
-    z-index: 1;
+        .hero::after {
+            content: "";
 
-    width: 100%;
+            position: absolute;
 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+            width: 350px;
+            height: 350px;
 
-    gap: 70px;
-}
+            bottom: -180px;
+            left: -120px;
 
-.hero-content {
-    max-width: 850px;
-}
+            border-radius: 50%;
 
-.eyebrow {
-    display: inline-flex;
+            background:
+                radial-gradient(
+                    circle,
+                    rgba(6, 182, 212, 0.13),
+                    transparent 70%
+                );
 
-    align-items: center;
+            filter: blur(10px);
+        }
 
-    margin-bottom: 20px;
+        .hero-layout {
+            position: relative;
+            z-index: 1;
 
-    padding: 8px 16px;
+            width: 100%;
 
-    border:
-        1px solid rgba(79,70,229,0.18);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
 
-    border-radius: 50px;
+            gap: 70px;
+        }
 
-    background:
-        rgba(79,70,229,0.08);
+        .hero-content {
+            max-width: 850px;
+        }
 
-    color: var(--primary);
+        .eyebrow {
+            display: inline-flex;
+            align-items: center;
 
-    font-size: 13px;
+            margin-bottom: 20px;
 
-    font-weight: 800;
+            padding: 8px 16px;
 
-    transition:
-        transform var(--transition),
-        box-shadow var(--transition),
-        background var(--transition);
-}
+            border:
+                1px solid rgba(139, 92, 246, 0.35);
 
-.eyebrow:hover {
-    transform: translateY(-3px);
+            border-radius: 50px;
 
-    background:
-        rgba(79,70,229,0.13);
+            background:
+                rgba(139, 92, 246, 0.10);
 
-    box-shadow:
-        0 10px 25px rgba(79,70,229,0.12);
-}
+            color:
+                var(--primary-light);
 
-.hero h1 {
-    font-size:
-        clamp(48px, 7vw, 82px);
+            font-size: 13px;
 
-    line-height: 1.02;
+            font-weight: 800;
 
-    letter-spacing: -3px;
+            box-shadow:
+                0 0 25px rgba(139, 92, 246, 0.08);
 
-    color: var(--dark);
+            transition:
+                transform var(--transition),
+                box-shadow var(--transition);
+        }
 
-    margin-bottom: 20px;
-}
+        .eyebrow:hover {
+            transform:
+                translateY(-3px);
 
-.hero h1 span {
-    background:
-        linear-gradient(
-            90deg,
-            var(--primary),
-            #6366f1,
-            var(--cyan)
-        );
+            box-shadow:
+                0 10px 30px
+                rgba(139, 92, 246, 0.22);
+        }
 
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
+        .hero h1 {
+            font-size:
+                clamp(48px, 7vw, 82px);
 
-.hero h2 {
-    font-size:
-        clamp(22px, 3vw, 31px);
+            line-height: 1.02;
 
-    line-height: 1.3;
+            letter-spacing: -3px;
 
-    font-weight: 650;
+            color: white;
 
-    color: var(--dark-2);
+            margin-bottom: 20px;
+        }
 
-    margin-bottom: 22px;
-}
+        .hero h1 span {
+            background:
+                linear-gradient(
+                    90deg,
+                    #a78bfa,
+                    #8b5cf6,
+                    #22d3ee
+                );
 
-.hero-description {
-    max-width: 760px;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
 
-    font-size: 18px;
+            filter:
+                drop-shadow(
+                    0 0 25px
+                    rgba(139, 92, 246, 0.20)
+                );
+        }
 
-    color: var(--muted);
+        .hero h2 {
+            font-size:
+                clamp(22px, 3vw, 31px);
 
-    margin-bottom: 32px;
-}
+            line-height: 1.3;
 
+            font-weight: 650;
 
-/* =========================================================
-   PROFILE PHOTO
-========================================================= */
+            color: #cbd5e1;
 
-.hero-photo {
-    width: 270px;
-    height: 270px;
+            margin-bottom: 22px;
+        }
 
-    flex: 0 0 270px;
+        .hero-description {
+            max-width: 760px;
 
-    object-fit: cover;
+            font-size: 18px;
 
-    border-radius: 50%;
+            color: var(--muted);
 
-    border: 7px solid white;
+            margin-bottom: 32px;
+        }
 
-    box-shadow:
-        0 0 0 1px rgba(79,70,229,0.08),
-        0 25px 70px rgba(79,70,229,0.20);
 
-    transition:
-        transform 0.45s ease,
-        box-shadow 0.45s ease;
-}
+        /* =====================================================
+           PROFILE PHOTO
+        ====================================================== */
 
-.hero-photo:hover {
-    transform:
-        translateY(-8px)
-        scale(1.04)
-        rotate(1deg);
+        .hero-photo {
+            width: 270px;
+            height: 270px;
 
-    box-shadow:
-        0 0 0 8px rgba(79,70,229,0.06),
-        0 35px 80px rgba(79,70,229,0.28);
-}
+            flex: 0 0 270px;
 
+            object-fit: cover;
 
-/* =========================================================
-   BUTTONS
-========================================================= */
+            border-radius: 50%;
 
-.buttons {
-    display: flex;
-    flex-wrap: wrap;
+            border:
+                5px solid rgba(255,255,255,0.92);
 
-    gap: 13px;
-}
+            box-shadow:
+                0 0 0 8px rgba(139, 92, 246, 0.10),
+                0 0 45px rgba(139, 92, 246, 0.30),
+                0 25px 70px rgba(0, 0, 0, 0.45);
 
-.button {
-    display: inline-flex;
+            transition:
+                transform 0.45s ease,
+                box-shadow 0.45s ease;
+        }
 
-    align-items: center;
-    justify-content: center;
+        .hero-photo:hover {
+            transform:
+                translateY(-10px)
+                scale(1.05)
+                rotate(1deg);
 
-    padding: 13px 22px;
+            box-shadow:
+                0 0 0 12px rgba(139, 92, 246, 0.12),
+                0 0 70px rgba(6, 182, 212, 0.35),
+                0 35px 90px rgba(0, 0, 0, 0.55);
+        }
 
-    border-radius: 10px;
 
-    font-weight: 750;
+        /* =====================================================
+           BUTTONS
+        ====================================================== */
 
-    transition:
-        transform var(--transition),
-        box-shadow var(--transition),
-        background var(--transition),
-        border-color var(--transition),
-        color var(--transition);
-}
+        .buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 13px;
+        }
 
-.primary-button {
-    color: white;
+        .button {
+            display: inline-flex;
 
-    background:
-        linear-gradient(
-            135deg,
-            var(--primary),
-            #6366f1,
-            var(--cyan)
-        );
+            align-items: center;
+            justify-content: center;
 
-    box-shadow:
-        0 10px 25px rgba(79,70,229,0.25);
-}
+            padding: 13px 22px;
 
-.primary-button:hover {
-    transform: translateY(-4px);
+            border-radius: 11px;
 
-    box-shadow:
-        0 18px 35px rgba(79,70,229,0.32);
-}
+            font-weight: 750;
 
-.secondary-button {
-    color: var(--dark);
+            transition:
+                transform var(--transition),
+                box-shadow var(--transition),
+                background var(--transition),
+                border-color var(--transition);
+        }
 
-    background:
-        rgba(255,255,255,0.85);
+        .primary-button {
+            color: white;
 
-    border:
-        1px solid var(--border);
+            background:
+                linear-gradient(
+                    135deg,
+                    #7c3aed,
+                    #8b5cf6,
+                    #06b6d4
+                );
 
-    box-shadow:
-        0 5px 15px rgba(15,23,42,0.05);
-}
+            box-shadow:
+                0 10px 30px
+                rgba(139, 92, 246, 0.30);
+        }
 
-.secondary-button:hover {
-    transform: translateY(-4px);
+        .primary-button:hover {
+            transform:
+                translateY(-5px);
 
-    color: var(--primary);
+            box-shadow:
+                0 18px 45px
+                rgba(139, 92, 246, 0.45);
+        }
 
-    border-color:
-        rgba(79,70,229,0.45);
+        .secondary-button {
+            color: #e2e8f0;
 
-    background: white;
+            background:
+                rgba(255,255,255,0.04);
 
-    box-shadow:
-        0 15px 30px rgba(79,70,229,0.12);
-}
+            border:
+                1px solid rgba(139, 92, 246, 0.30);
 
+            box-shadow:
+                0 5px 20px rgba(0,0,0,0.20);
+        }
 
-/* =========================================================
-   SECTIONS
-========================================================= */
+        .secondary-button:hover {
+            transform:
+                translateY(-5px);
 
-section {
-    padding: 95px 8%;
-}
+            color: white;
 
-section:nth-child(even) {
-    background:
-        linear-gradient(
-            180deg,
-            #f8fafc,
-            #f1f5f9
-        );
-}
+            border-color:
+                var(--primary-light);
 
-.section-header {
-    max-width: 780px;
+            background:
+                rgba(139, 92, 246, 0.15);
 
-    margin-bottom: 45px;
-}
+            box-shadow:
+                0 15px 35px
+                rgba(139, 92, 246, 0.20);
+        }
 
-.section-title {
-    position: relative;
 
-    display: inline-block;
+        /* =====================================================
+           SECTIONS
+        ====================================================== */
 
-    font-size: 38px;
+        section {
+            padding: 95px 8%;
 
-    line-height: 1.2;
+            background:
+                var(--bg);
+        }
 
-    color: var(--dark);
+        section:nth-child(even) {
+            background:
+                linear-gradient(
+                    180deg,
+                    #080d20,
+                    #0b1128
+                );
+        }
 
-    margin-bottom: 14px;
+        .section-header {
+            max-width: 780px;
 
-    letter-spacing: -1px;
-}
+            margin-bottom: 45px;
+        }
 
-.section-title::after {
-    content: "";
+        .section-title {
+            position: relative;
 
-    display: block;
+            display: inline-block;
 
-    width: 65px;
-    height: 4px;
+            font-size: 38px;
 
-    margin-top: 10px;
+            line-height: 1.2;
 
-    border-radius: 10px;
+            color: white;
 
-    background:
-        linear-gradient(
-            90deg,
-            var(--primary),
-            var(--cyan)
-        );
-}
+            margin-bottom: 14px;
 
-.section-description {
-    color: var(--muted);
+            letter-spacing: -1px;
+        }
 
-    font-size: 16px;
-}
+        .section-title::after {
+            content: "";
 
+            display: block;
 
-/* =========================================================
-   ABOUT
-========================================================= */
+            width: 70px;
+            height: 4px;
 
-.about-container {
-    max-width: 950px;
-}
+            margin-top: 10px;
 
-.about-container p {
-    margin-bottom: 18px;
+            border-radius: 10px;
 
-    font-size: 17px;
+            background:
+                linear-gradient(
+                    90deg,
+                    var(--primary),
+                    var(--cyan)
+                );
 
-    color: var(--text);
-}
+            box-shadow:
+                0 0 15px
+                rgba(139, 92, 246, 0.40);
+        }
 
+        .section-description {
+            color: var(--muted);
 
-/* =========================================================
-   EDUCATION
-========================================================= */
+            font-size: 16px;
+        }
 
-.timeline-card {
-    position: relative;
 
-    max-width: 900px;
+        /* =====================================================
+           ABOUT
+        ====================================================== */
 
-    padding: 32px;
+        .about-container {
+            max-width: 950px;
+        }
 
-    background: white;
+        .about-container p {
+            margin-bottom: 18px;
 
-    border:
-        1px solid var(--border);
+            font-size: 17px;
 
-    border-radius: 18px;
+            color: #cbd5e1;
+        }
 
-    box-shadow: var(--shadow);
 
-    overflow: hidden;
+        /* =====================================================
+           EDUCATION
+        ====================================================== */
 
-    transition:
-        transform var(--transition),
-        box-shadow var(--transition),
-        border-color var(--transition);
-}
+        .timeline-card {
+            position: relative;
 
-.timeline-card::before {
-    content: "";
+            max-width: 900px;
 
-    position: absolute;
+            padding: 32px;
 
-    left: 0;
-    top: 0;
+            background:
+                linear-gradient(
+                    145deg,
+                    rgba(17,25,54,0.96),
+                    rgba(8,13,32,0.96)
+                );
 
-    width: 5px;
-    height: 100%;
+            border:
+                1px solid var(--border);
 
-    background:
-        linear-gradient(
-            180deg,
-            var(--primary),
-            var(--cyan)
-        );
-}
+            border-radius: 18px;
 
-.timeline-card:hover {
-    transform: translateY(-7px);
+            box-shadow:
+                var(--shadow);
 
-    border-color:
-        rgba(79,70,229,0.35);
+            overflow: hidden;
 
-    box-shadow: var(--shadow-hover);
-}
+            transition:
+                transform var(--transition),
+                box-shadow var(--transition),
+                border-color var(--transition);
+        }
 
-.timeline-date {
-    color: var(--primary);
+        .timeline-card::before {
+            content: "";
 
-    font-size: 14px;
+            position: absolute;
 
-    font-weight: 800;
+            left: 0;
+            top: 0;
 
-    margin-bottom: 6px;
-}
+            width: 5px;
+            height: 100%;
 
-.timeline-card h3 {
-    color: var(--dark);
+            background:
+                linear-gradient(
+                    180deg,
+                    var(--primary),
+                    var(--cyan)
+                );
 
-    font-size: 24px;
+            box-shadow:
+                0 0 20px
+                rgba(139, 92, 246, 0.45);
+        }
 
-    margin-bottom: 6px;
-}
+        .timeline-card:hover {
+            transform:
+                translateY(-8px);
 
-.timeline-card p {
-    color: var(--muted);
-}
+            border-color:
+                rgba(139, 92, 246, 0.50);
 
+            box-shadow:
+                var(--shadow-hover);
+        }
 
-/* =========================================================
-   RESEARCH
-========================================================= */
+        .timeline-date {
+            color:
+                var(--primary-light);
 
-.research-grid {
-    display: grid;
+            font-size: 14px;
 
-    grid-template-columns:
-        repeat(3, 1fr);
+            font-weight: 800;
 
-    gap: 24px;
-}
+            margin-bottom: 6px;
+        }
 
-.research-card {
-    position: relative;
+        .timeline-card h3 {
+            color: white;
 
-    padding: 30px;
+            font-size: 24px;
 
-    background:
-        rgba(255,255,255,0.96);
+            margin-bottom: 6px;
+        }
 
-    border:
-        1px solid var(--border);
+        .timeline-card p {
+            color: var(--muted);
+        }
 
-    border-radius: 18px;
 
-    box-shadow: var(--shadow);
+        /* =====================================================
+           RESEARCH
+        ====================================================== */
 
-    overflow: hidden;
+        .research-grid {
+            display: grid;
 
-    transition:
-        transform var(--transition),
-        box-shadow var(--transition),
-        border-color var(--transition);
-}
+            grid-template-columns:
+                repeat(3, 1fr);
 
-.research-card::before {
-    content: "";
+            gap: 24px;
+        }
 
-    position: absolute;
+        .research-card {
+            position: relative;
 
-    left: 0;
-    top: 0;
+            padding: 30px;
 
-    width: 100%;
-    height: 4px;
+            background:
+                linear-gradient(
+                    145deg,
+                    rgba(17,25,54,0.96),
+                    rgba(8,13,32,0.96)
+                );
 
-    background:
-        linear-gradient(
-            90deg,
-            var(--primary),
-            var(--cyan)
-        );
+            border:
+                1px solid var(--border);
 
-    transform:
-        scaleX(0);
+            border-radius: 18px;
 
-    transform-origin: left;
+            box-shadow:
+                var(--shadow);
 
-    transition:
-        transform var(--transition);
-}
+            overflow: hidden;
 
-.research-card:hover {
-    transform: translateY(-9px);
+            transition:
+                transform var(--transition),
+                box-shadow var(--transition),
+                border-color var(--transition);
+        }
 
-    border-color:
-        rgba(79,70,229,0.35);
+        .research-card::before {
+            content: "";
 
-    box-shadow:
-        0 22px 45px
-        rgba(79,70,229,0.13);
-}
+            position: absolute;
 
-.research-card:hover::before {
-    transform:
-        scaleX(1);
-}
+            left: 0;
+            top: 0;
 
-.research-card h3 {
-    color: var(--dark);
+            width: 100%;
+            height: 4px;
 
-    font-size: 20px;
+            background:
+                linear-gradient(
+                    90deg,
+                    var(--primary),
+                    var(--cyan)
+                );
 
-    margin-bottom: 10px;
-}
+            transform:
+                scaleX(0);
 
-.research-card p {
-    color: var(--muted);
+            transform-origin: left;
 
-    font-size: 15px;
-}
+            transition:
+                transform var(--transition);
+        }
 
+        .research-card:hover {
+            transform:
+                translateY(-10px);
 
-/* =========================================================
-   PROJECTS
-========================================================= */
+            border-color:
+                rgba(139, 92, 246, 0.50);
 
-.projects-grid {
-    display: grid;
+            background:
+                linear-gradient(
+                    145deg,
+                    rgba(25,35,75,0.98),
+                    rgba(11,18,42,0.98)
+                );
 
-    grid-template-columns:
-        repeat(2, 1fr);
+            box-shadow:
+                0 25px 55px
+                rgba(139, 92, 246, 0.20);
+        }
 
-    gap: 24px;
-}
+        .research-card:hover::before {
+            transform:
+                scaleX(1);
+        }
 
-.project-card {
-    position: relative;
+        .research-card h3 {
+            color: white;
 
-    padding: 32px;
+            font-size: 20px;
 
-    background: white;
+            margin-bottom: 10px;
+        }
 
-    border:
-        1px solid var(--border);
+        .research-card p {
+            color: var(--muted);
 
-    border-radius: 18px;
+            font-size: 15px;
+        }
 
-    box-shadow: var(--shadow);
 
-    overflow: hidden;
+        /* =====================================================
+           PROJECTS
+        ====================================================== */
 
-    transition:
-        transform var(--transition),
-        box-shadow var(--transition),
-        border-color var(--transition);
-}
+        .projects-grid {
+            display: grid;
 
-.project-card::after {
-    content: "";
+            grid-template-columns:
+                repeat(2, 1fr);
 
-    position: absolute;
+            gap: 24px;
+        }
 
-    left: 0;
-    bottom: 0;
+        .project-card {
+            position: relative;
 
-    width: 100%;
-    height: 4px;
+            padding: 32px;
 
-    background:
-        linear-gradient(
-            90deg,
-            var(--primary),
-            var(--cyan)
-        );
+            background:
+                linear-gradient(
+                    145deg,
+                    rgba(17,25,54,0.96),
+                    rgba(8,13,32,0.96)
+                );
 
-    transform:
-        scaleX(0);
+            border:
+                1px solid var(--border);
 
-    transform-origin: left;
+            border-radius: 18px;
 
-    transition:
-        transform var(--transition);
-}
+            box-shadow:
+                var(--shadow);
 
-.project-card:hover {
-    transform: translateY(-9px);
+            overflow: hidden;
 
-    border-color:
-        rgba(79,70,229,0.35);
+            transition:
+                transform var(--transition),
+                box-shadow var(--transition),
+                border-color var(--transition);
+        }
 
-    box-shadow:
-        0 24px 50px
-        rgba(79,70,229,0.14);
-}
+        .project-card::after {
+            content: "";
 
-.project-card:hover::after {
-    transform:
-        scaleX(1);
-}
+            position: absolute;
 
-.project-card h3 {
-    color: var(--dark);
+            left: 0;
+            bottom: 0;
 
-    font-size: 22px;
+            width: 100%;
+            height: 4px;
 
-    margin-bottom: 11px;
-}
+            background:
+                linear-gradient(
+                    90deg,
+                    var(--primary),
+                    var(--cyan)
+                );
 
-.project-card p {
-    color: var(--muted);
+            transform:
+                scaleX(0);
 
-    margin-bottom: 20px;
-}
+            transform-origin: left;
 
+            transition:
+                transform var(--transition);
+        }
 
-/* =========================================================
-   TECHNOLOGY TAGS
-========================================================= */
+        .project-card:hover {
+            transform:
+                translateY(-10px);
 
-.technology {
-    display: flex;
+            border-color:
+                rgba(139, 92, 246, 0.50);
 
-    flex-wrap: wrap;
+            box-shadow:
+                0 25px 60px
+                rgba(139, 92, 246, 0.20);
+        }
 
-    gap: 8px;
+        .project-card:hover::after {
+            transform:
+                scaleX(1);
+        }
 
-    margin-bottom: 21px;
-}
+        .project-card h3 {
+            color: white;
 
-.technology span {
-    padding: 6px 11px;
+            font-size: 22px;
 
-    background:
-        #eef2ff;
+            margin-bottom: 11px;
+        }
 
-    color:
-        var(--primary-dark);
+        .project-card p {
+            color: var(--muted);
 
-    border:
-        1px solid #e0e7ff;
+            margin-bottom: 20px;
+        }
 
-    border-radius: 7px;
 
-    font-size: 12px;
+        /* =====================================================
+           TECHNOLOGY TAGS
+        ====================================================== */
 
-    font-weight: 750;
+        .technology {
+            display: flex;
 
-    transition:
-        transform var(--transition),
-        background var(--transition),
-        color var(--transition),
-        box-shadow var(--transition);
-}
+            flex-wrap: wrap;
 
-.technology span:hover {
-    transform:
-        translateY(-3px);
+            gap: 8px;
 
-    color: white;
+            margin-bottom: 21px;
+        }
 
-    background:
-        linear-gradient(
-            135deg,
-            var(--primary),
-            var(--cyan)
-        );
+        .technology span {
+            padding: 6px 11px;
 
-    border-color:
-        transparent;
+            background:
+                rgba(139, 92, 246, 0.10);
 
-    box-shadow:
-        0 7px 16px
-        rgba(79,70,229,0.18);
-}
+            color:
+                var(--primary-light);
 
-.project-link {
-    color: var(--primary);
+            border:
+                1px solid rgba(139, 92, 246, 0.25);
 
-    font-weight: 750;
+            border-radius: 7px;
 
-    font-size: 14px;
+            font-size: 12px;
 
-    transition:
-        color var(--transition),
-        letter-spacing var(--transition);
-}
+            font-weight: 750;
 
-.project-link:hover {
-    color: var(--cyan);
+            transition:
+                transform var(--transition),
+                background var(--transition),
+                color var(--transition),
+                box-shadow var(--transition);
+        }
 
-    letter-spacing: 0.5px;
-}
+        .technology span:hover {
+            transform:
+                translateY(-3px);
 
+            color: white;
 
-/* =========================================================
-   SKILLS
-========================================================= */
+            background:
+                linear-gradient(
+                    135deg,
+                    var(--primary),
+                    var(--cyan)
+                );
 
-.skills-container {
-    display: flex;
+            border-color:
+                transparent;
 
-    flex-wrap: wrap;
+            box-shadow:
+                0 8px 20px
+                rgba(139, 92, 246, 0.30);
+        }
 
-    gap: 11px;
+        .project-link {
+            color:
+                var(--cyan-light);
 
-    max-width: 1000px;
-}
+            font-weight: 750;
 
-.skill {
-    padding: 9px 16px;
+            font-size: 14px;
 
-    background: white;
+            transition:
+                color var(--transition),
+                letter-spacing var(--transition);
+        }
 
-    border:
-        1px solid var(--border);
+        .project-link:hover {
+            color:
+                var(--primary-light);
 
-    border-radius: 30px;
+            letter-spacing:
+                0.7px;
+        }
 
-    font-size: 14px;
 
-    color: var(--text);
+        /* =====================================================
+           SKILLS
+        ====================================================== */
 
-    box-shadow:
-        0 4px 12px
-        rgba(15,23,42,0.05);
+        .skills-container {
+            display: flex;
 
-    transition:
-        transform var(--transition),
-        color var(--transition),
-        background var(--transition),
-        border-color var(--transition),
-        box-shadow var(--transition);
-}
+            flex-wrap: wrap;
 
-.skill:hover {
-    transform:
-        translateY(-5px)
-        scale(1.03);
+            gap: 11px;
 
-    color: white;
+            max-width: 1000px;
+        }
 
-    background:
-        linear-gradient(
-            135deg,
-            var(--primary),
-            var(--cyan)
-        );
+        .skill {
+            padding: 9px 16px;
 
-    border-color:
-        transparent;
+            background:
+                rgba(15,23,50,0.85);
 
-    box-shadow:
-        0 10px 22px
-        rgba(79,70,229,0.20);
-}
+            border:
+                1px solid rgba(139, 92, 246, 0.20);
 
+            border-radius: 30px;
 
-/* =========================================================
-   EXPERIENCE
-========================================================= */
+            font-size: 14px;
 
-.experience-card {
-    position: relative;
+            color:
+                #cbd5e1;
 
-    max-width: 900px;
+            box-shadow:
+                0 5px 15px
+                rgba(0,0,0,0.20);
 
-    padding: 32px;
+            transition:
+                transform var(--transition),
+                color var(--transition),
+                background var(--transition),
+                border-color var(--transition),
+                box-shadow var(--transition);
+        }
 
-    background: white;
+        .skill:hover {
+            transform:
+                translateY(-5px)
+                scale(1.04);
 
-    border:
-        1px solid var(--border);
+            color: white;
 
-    border-radius: 18px;
+            background:
+                linear-gradient(
+                    135deg,
+                    var(--primary),
+                    var(--cyan)
+                );
 
-    box-shadow: var(--shadow);
+            border-color:
+                transparent;
 
-    overflow: hidden;
+            box-shadow:
+                0 12px 28px
+                rgba(139, 92, 246, 0.30);
+        }
 
-    transition:
-        transform var(--transition),
-        box-shadow var(--transition),
-        border-color var(--transition);
-}
 
-.experience-card::before {
-    content: "";
+        /* =====================================================
+           EXPERIENCE
+        ====================================================== */
 
-    position: absolute;
+        .experience-card {
+            position: relative;
 
-    left: 0;
-    top: 0;
+            max-width: 900px;
 
-    width: 5px;
-    height: 100%;
+            padding: 32px;
 
-    background:
-        linear-gradient(
-            180deg,
-            var(--primary),
-            var(--cyan)
-        );
-}
+            background:
+                linear-gradient(
+                    145deg,
+                    rgba(17,25,54,0.96),
+                    rgba(8,13,32,0.96)
+                );
 
-.experience-card:hover {
-    transform:
-        translateY(-7px);
+            border:
+                1px solid var(--border);
 
-    border-color:
-        rgba(79,70,229,0.35);
+            border-radius: 18px;
 
-    box-shadow:
-        var(--shadow-hover);
-}
+            box-shadow:
+                var(--shadow);
 
-.experience-card .date {
-    color: var(--primary);
+            overflow: hidden;
 
-    font-size: 14px;
+            transition:
+                transform var(--transition),
+                box-shadow var(--transition),
+                border-color var(--transition);
+        }
 
-    font-weight: 800;
-}
+        .experience-card::before {
+            content: "";
 
-.experience-card h3 {
-    color: var(--dark);
+            position: absolute;
 
-    font-size: 24px;
+            left: 0;
+            top: 0;
 
-    margin: 6px 0;
-}
+            width: 5px;
+            height: 100%;
 
-.experience-card p {
-    color: var(--muted);
-}
+            background:
+                linear-gradient(
+                    180deg,
+                    var(--primary),
+                    var(--cyan)
+                );
+        }
 
+        .experience-card:hover {
+            transform:
+                translateY(-8px);
 
-/* =========================================================
-   CONTACT
-========================================================= */
+            border-color:
+                rgba(139, 92, 246, 0.50);
 
-.contact {
-    position: relative;
+            box-shadow:
+                var(--shadow-hover);
+        }
 
-    overflow: hidden;
+        .experience-card .date {
+            color:
+                var(--primary-light);
 
-    background:
-        radial-gradient(
-            circle at 85% 10%,
-            rgba(34,211,238,0.18),
-            transparent 25%
-        ),
+            font-size: 14px;
 
-        radial-gradient(
-            circle at 10% 90%,
-            rgba(99,102,241,0.20),
-            transparent 25%
-        ),
+            font-weight: 800;
+        }
 
-        linear-gradient(
-            135deg,
-            #0f172a,
-            #172554,
-            #0f172a
-        ) !important;
+        .experience-card h3 {
+            color: white;
 
-    color: white;
-}
+            font-size: 24px;
 
-.contact::before {
-    content: "";
+            margin: 6px 0;
+        }
 
-    position: absolute;
+        .experience-card p {
+            color: var(--muted);
+        }
 
-    width: 250px;
-    height: 250px;
 
-    border-radius: 50%;
+        /* =====================================================
+           CONTACT
+        ====================================================== */
 
-    right: -100px;
-    bottom: -100px;
+        .contact {
+            position: relative;
 
-    background:
-        rgba(34,211,238,0.10);
+            overflow: hidden;
 
-    filter: blur(20px);
-}
+            background:
+                radial-gradient(
+                    circle at 85% 10%,
+                    rgba(34,211,238,0.18),
+                    transparent 25%
+                ),
+                radial-gradient(
+                    circle at 10% 90%,
+                    rgba(139,92,246,0.25),
+                    transparent 25%
+                ),
+                linear-gradient(
+                    135deg,
+                    #090d20,
+                    #151044,
+                    #071827
+                ) !important;
 
-.contact .section-title {
-    color: white;
-}
+            color: white;
+        }
 
-.contact .section-title::after {
-    background:
-        linear-gradient(
-            90deg,
-            var(--primary-light),
-            var(--cyan-light)
-        );
-}
+        .contact .section-title {
+            color: white;
+        }
 
-.contact .section-description {
-    color: #cbd5e1;
+        .contact .section-title::after {
+            background:
+                linear-gradient(
+                    90deg,
+                    var(--primary-light),
+                    var(--cyan-light)
+                );
+        }
 
-    max-width: 700px;
+        .contact .section-description {
+            color:
+                #aebbd0;
 
-    margin-bottom: 27px;
-}
+            max-width: 700px;
 
-.contact-links {
-    position: relative;
-    z-index: 1;
+            margin-bottom: 27px;
+        }
 
-    display: flex;
+        .contact-links {
+            position: relative;
+            z-index: 1;
 
-    flex-wrap: wrap;
+            display: flex;
 
-    gap: 12px;
-}
+            flex-wrap: wrap;
 
-.contact-links a {
-    padding: 12px 19px;
+            gap: 12px;
+        }
 
-    color: white;
+        .contact-links a {
+            padding: 12px 19px;
 
-    background:
-        rgba(255,255,255,0.05);
+            color: white;
 
-    border:
-        1px solid rgba(255,255,255,0.18);
+            background:
+                rgba(255,255,255,0.06);
 
-    border-radius: 10px;
+            border:
+                1px solid rgba(139,92,246,0.30);
 
-    transition:
-        transform var(--transition),
-        background var(--transition),
-        color var(--transition),
-        box-shadow var(--transition),
-        border-color var(--transition);
-}
+            border-radius: 10px;
 
-.contact-links a:hover {
-    transform:
-        translateY(-5px);
+            transition:
+                transform var(--transition),
+                background var(--transition),
+                color var(--transition),
+                box-shadow var(--transition),
+                border-color var(--transition);
+        }
 
-    color: var(--dark);
+        .contact-links a:hover {
+            transform:
+                translateY(-5px);
 
-    background: white;
+            color: white;
 
-    border-color: white;
+            background:
+                linear-gradient(
+                    135deg,
+                    var(--primary),
+                    var(--cyan)
+                );
 
-    box-shadow:
-        0 15px 30px
-        rgba(0,0,0,0.25);
-}
+            border-color:
+                transparent;
 
+            box-shadow:
+                0 15px 35px
+                rgba(139,92,246,0.30);
+        }
 
-/* =========================================================
-   FOOTER
-========================================================= */
 
-footer {
-    padding: 27px;
+        /* =====================================================
+           FOOTER
+        ====================================================== */
 
-    text-align: center;
+        footer {
+            padding: 27px;
 
-    background:
-        #020617;
+            text-align: center;
 
-    color:
-        #94a3b8;
+            background:
+                #02040d;
 
-    font-size: 14px;
-}
+            color:
+                #718096;
 
+            font-size: 14px;
 
-/* =========================================================
-   MOBILE
-========================================================= */
+            border-top:
+                1px solid rgba(139,92,246,0.12);
+        }
 
-@media (max-width: 900px) {
 
-    nav {
-        padding:
-            16px 5%;
-    }
+        /* =====================================================
+           MOBILE
+        ====================================================== */
 
-    nav ul {
-        display: none;
-    }
+        @media (max-width: 900px) {
 
-    .hero {
-        padding:
-            75px 5%;
-    }
+            nav {
+                padding:
+                    16px 5%;
+            }
 
-    .hero-layout {
-        flex-direction:
-            column-reverse;
+            nav ul {
+                display: none;
+            }
 
-        align-items:
-            flex-start;
+            .hero {
+                padding:
+                    75px 5%;
+            }
 
-        gap: 40px;
-    }
+            .hero-layout {
+                flex-direction:
+                    column-reverse;
 
-    .hero-photo {
-        width: 210px;
-        height: 210px;
+                align-items:
+                    flex-start;
 
-        flex-basis: 210px;
+                gap: 40px;
+            }
 
-        align-self: center;
-    }
+            .hero-photo {
+                width: 210px;
+                height: 210px;
 
-    section {
-        padding:
-            75px 5%;
-    }
+                flex-basis: 210px;
 
-    .research-grid,
-    .projects-grid {
-        grid-template-columns:
-            1fr;
-    }
+                align-self: center;
+            }
 
-    .section-title {
-        font-size: 33px;
-    }
-}
+            section {
+                padding:
+                    75px 5%;
+            }
 
+            .research-grid,
+            .projects-grid {
+                grid-template-columns:
+                    1fr;
+            }
 
-/* =========================================================
-   SMALL MOBILE
-========================================================= */
+            .section-title {
+                font-size:
+                    33px;
+            }
+        }
 
-@media (max-width: 480px) {
 
-    .hero {
-        min-height:
-            auto;
+        /* =====================================================
+           SMALL MOBILE
+        ====================================================== */
 
-        padding:
-            65px 5% 75px;
-    }
+        @media (max-width: 480px) {
 
-    .hero h1 {
-        font-size:
-            47px;
+            .hero {
+                min-height:
+                    auto;
 
-        letter-spacing:
-            -2px;
-    }
+                padding:
+                    65px 5% 75px;
+            }
 
-    .hero h2 {
-        font-size:
-            22px;
-    }
+            .hero h1 {
+                font-size:
+                    47px;
 
-    .hero-description {
-        font-size:
-            16px;
-    }
+                letter-spacing:
+                    -2px;
+            }
 
-    .buttons {
-        width:
-            100%;
-    }
+            .hero h2 {
+                font-size:
+                    22px;
+            }
 
-    .button {
-        width:
-            100%;
-    }
+            .hero-description {
+                font-size:
+                    16px;
+            }
 
-    .hero-photo {
-        width:
-            175px;
+            .buttons {
+                width:
+                    100%;
+            }
 
-        height:
-            175px;
+            .button {
+                width:
+                    100%;
+            }
 
-        flex-basis:
-            175px;
-    }
+            .hero-photo {
+                width:
+                    175px;
 
-    .project-card,
-    .research-card,
-    .timeline-card,
-    .experience-card {
-        padding:
-            24px;
-    }
+                height:
+                    175px;
 
-    .section-title {
-        font-size:
-            30px;
-    }
-}
+                flex-basis:
+                    175px;
+            }
 
+            .project-card,
+            .research-card,
+            .timeline-card,
+            .experience-card {
+                padding:
+                    24px;
+            }
 
-/* =========================================================
-   ACCESSIBILITY
-========================================================= */
+            .section-title {
+                font-size:
+                    30px;
+            }
+        }
 
-@media (prefers-reduced-motion: reduce) {
 
-    *,
-    *::before,
-    *::after {
-        scroll-behavior:
-            auto !important;
+        /* =====================================================
+           ACCESSIBILITY
+        ====================================================== */
 
-        transition:
-            none !important;
+        @media (prefers-reduced-motion: reduce) {
 
-        animation:
-            none !important;
-    }
-}
+            *,
+            *::before,
+            *::after {
+                scroll-behavior:
+                    auto !important;
 
-</style>
+                transition:
+                    none !important;
+
+                animation:
+                    none !important;
+            }
+        }
+
+    </style>
 </head>
+
 
 <body>
 
-<nav>
 
-    <a href="#" class="logo">
-        Mateen <span>Sajjad</span>
-    </a>
+    <!-- =====================================================
+         NAVIGATION
+    ====================================================== -->
 
-    <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#research">Research</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
+    <nav>
 
-</nav>
+        <a href="#" class="logo">
+            Mateen <span>Sajjad</span>
+        </a>
+
+        <ul>
+
+            <li>
+                <a href="#about">About</a>
+            </li>
+
+            <li>
+                <a href="#education">Education</a>
+            </li>
+
+            <li>
+                <a href="#research">Research</a>
+            </li>
+
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+
+            <li>
+                <a href="#skills">Skills</a>
+            </li>
+
+            <li>
+                <a href="#experience">Experience</a>
+            </li>
+
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+
+        </ul>
+
+    </nav>
 
 
-<section class="hero">
+    <!-- =====================================================
+         HERO
+    ====================================================== -->
 
-    <div class="hero-layout">
+    <section class="hero">
 
-        <div class="hero-content">
+        <div class="hero-layout">
 
-            <div class="eyebrow">
-                Computer Science • AI/ML • Research
+            <div class="hero-content">
+
+                <div class="eyebrow">
+                    Computer Science • AI/ML • Research
+                </div>
+
+                <h1>
+                    Mateen <span>Sajjad</span>
+                </h1>
+
+                <h2>
+                    Computer Science Student & AI/ML Enthusiast
+                </h2>
+
+                <p class="hero-description">
+
+                    I am Muhammad Mateen Sajjad, professionally known as
+                    Mateen Sajjad, a Computer Science student and developer
+                    interested in Artificial Intelligence, Machine Learning,
+                    Natural Language Processing, AI agents, and intelligent
+                    software systems.
+
+                </p>
+
+                <div class="buttons">
+
+                    <a href="#projects"
+                       class="button primary-button">
+                        View Projects
+                    </a>
+
+                    <a href="https://github.com/Mateen2627"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="button secondary-button">
+                        GitHub
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/mateen-sajjad/"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="button secondary-button">
+                        LinkedIn
+                    </a>
+
+                </div>
+
             </div>
 
-            <h1>
-                Mateen <span>Sajjad</span>
-            </h1>
 
-            <h2>
-                Computer Science Student & AI/ML Enthusiast
+            <img
+                src="mateen-sajjad-profile.webp"
+                alt="Mateen Sajjad - Muhammad Mateen Sajjad - Computer Science and AI/ML"
+                class="hero-photo"
+                width="270"
+                height="270"
+            >
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         ABOUT
+    ====================================================== -->
+
+    <section id="about">
+
+        <div class="section-header">
+
+            <h2 class="section-title">
+                About Me
             </h2>
 
-            <p class="hero-description">
-                I am Muhammad Mateen Sajjad, professionally known as
-                Mateen Sajjad, a Computer Science student and developer
-                interested in Artificial Intelligence, Machine Learning,
-                Natural Language Processing, AI agents, and intelligent
-                software systems.
+            <p class="section-description">
+                A brief overview of my academic and technical background.
             </p>
 
-            <div class="buttons">
+        </div>
 
-                <a href="#projects"
-                   class="button primary-button">
-                    View Projects
-                </a>
 
-                <a href="https://github.com/Mateen2627"
-                   target="_blank"
-                   rel="noopener noreferrer"
-                   class="button secondary-button">
-                    GitHub
-                </a>
+        <div class="about-container">
 
-                <a href="https://www.linkedin.com/in/mateen-sajjad/"
-                   target="_blank"
-                   rel="noopener noreferrer"
-                   class="button secondary-button">
-                    LinkedIn
-                </a>
+            <p>
+                I am Muhammad Mateen Sajjad, professionally known as
+                Mateen Sajjad, a Computer Science student at the National
+                University of Modern Languages (NUML), Multan, with a strong
+                interest in Artificial Intelligence, Machine Learning,
+                Natural Language Processing, and intelligent software systems.
+            </p>
 
+            <p>
+                My academic and practical work includes AI-enabled
+                applications, web development, APIs, mobile applications,
+                and research-oriented projects. I am particularly
+                interested in applying AI and machine learning to
+                practical problems and pursuing research through
+                graduate study.
+            </p>
+
+            <p>
+                I have also explored Post-Quantum Cryptography (PQC)
+                and secure communication systems as part of my research
+                interests, while keeping Artificial Intelligence,
+                Machine Learning, and intelligent software as my primary
+                areas of interest.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         EDUCATION
+    ====================================================== -->
+
+    <section id="education">
+
+        <div class="section-header">
+
+            <h2 class="section-title">
+                Education
+            </h2>
+
+        </div>
+
+
+        <div class="timeline-card">
+
+            <div class="timeline-date">
+                2023 – 2027
             </div>
 
-        </div>
-
-        <img
-            src="mateen-sajjad-profile.webp"
-            alt="Mateen Sajjad - Muhammad Mateen Sajjad - Computer Science and AI/ML"
-            class="hero-photo"
-            width="270"
-            height="270"
-        >
-
-    </div>
-
-</section>
-
-
-<section id="about">
-
-    <div class="section-header">
-
-        <h2 class="section-title">
-            About Me
-        </h2>
-
-        <p class="section-description">
-            A brief overview of my academic and technical background.
-        </p>
-
-    </div>
-
-    <div class="about-container">
-
-        <p>
-            I am Muhammad Mateen Sajjad, professionally known as
-            Mateen Sajjad, a Computer Science student at the National
-            University of Modern Languages (NUML), Multan, with a strong
-            interest in Artificial Intelligence, Machine Learning,
-            Natural Language Processing, and intelligent software systems.
-        </p>
-
-        <p>
-            My academic and practical work includes AI-enabled
-            applications, web development, APIs, mobile applications,
-            and research-oriented projects. I am particularly
-            interested in applying AI and machine learning to
-            practical problems and pursuing research through
-            graduate study.
-        </p>
-
-        <p>
-            I have also explored Post-Quantum Cryptography (PQC)
-            and secure communication systems as part of my research
-            interests, while keeping Artificial Intelligence,
-            Machine Learning, and intelligent software as my primary
-            areas of interest.
-        </p>
-
-    </div>
-
-</section>
-
-
-<section id="education">
-
-    <div class="section-header">
-
-        <h2 class="section-title">
-            Education
-        </h2>
-
-    </div>
-
-    <div class="timeline-card">
-
-        <div class="timeline-date">
-            2023 – 2027
-        </div>
-
-        <h3>
-            Bachelor of Science in Computer Science
-        </h3>
-
-        <p>
-            National University of Modern Languages (NUML),
-            Multan, Pakistan
-        </p>
-
-    </div>
-
-</section>
-
-
-<section id="research">
-
-    <div class="section-header">
-
-        <h2 class="section-title">
-            Research Interests
-        </h2>
-
-        <p class="section-description">
-            Areas I am interested in exploring through graduate study,
-            research projects, and future collaborations.
-        </p>
-
-    </div>
-
-    <div class="research-grid">
-
-        <div class="research-card">
-            <h3>Artificial Intelligence</h3>
-            <p>
-                Intelligent systems, generative AI, AI applications,
-                and emerging artificial intelligence technologies.
-            </p>
-        </div>
-
-        <div class="research-card">
-            <h3>Machine Learning</h3>
-            <p>
-                Machine learning methods and their applications to
-                practical and real-world problems.
-            </p>
-        </div>
-
-        <div class="research-card">
-            <h3>Natural Language Processing</h3>
-            <p>
-                Natural language understanding, NLP systems,
-                and AI-assisted information processing.
-            </p>
-        </div>
-
-        <div class="research-card">
-            <h3>AI Agents</h3>
-            <p>
-                Agentic AI systems, tool use, automation,
-                and intelligent workflows.
-            </p>
-        </div>
-
-        <div class="research-card">
-            <h3>Intelligent Software</h3>
-            <p>
-                Combining software engineering with AI to build
-                practical intelligent applications.
-            </p>
-        </div>
-
-        <div class="research-card">
-            <h3>Post-Quantum Computing</h3>
-            <p>
-                Interest in post-quantum cryptography and
-                quantum-resilient secure communication.
-            </p>
-        </div>
-
-    </div>
-
-</section>
-
-
-<section id="projects">
-
-    <div class="section-header">
-
-        <h2 class="section-title">
-            Selected Projects
-        </h2>
-
-        <p class="section-description">
-            Academic, research, and software development projects.
-        </p>
-
-    </div>
-
-    <div class="projects-grid">
-
-        <div class="project-card">
-
             <h3>
-                Student Evaluation and Management System
+                Bachelor of Science in Computer Science
             </h3>
 
             <p>
-                An AI-enabled student evaluation and management
-                platform combining web technologies, role-based
-                access control, database management, and computer
-                vision components.
+                National University of Modern Languages (NUML),
+                Multan, Pakistan
             </p>
 
-            <div class="technology">
-                <span>Laravel</span>
-                <span>PHP</span>
-                <span>MySQL</span>
-                <span>Python</span>
-                <span>FastAPI</span>
-                <span>OpenCV</span>
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         RESEARCH
+    ====================================================== -->
+
+    <section id="research">
+
+        <div class="section-header">
+
+            <h2 class="section-title">
+                Research Interests
+            </h2>
+
+            <p class="section-description">
+                Areas I am interested in exploring through graduate study,
+                research projects, and future collaborations.
+            </p>
+
+        </div>
+
+
+        <div class="research-grid">
+
+
+            <div class="research-card">
+
+                <h3>
+                    Artificial Intelligence
+                </h3>
+
+                <p>
+                    Intelligent systems, generative AI, AI applications,
+                    and emerging artificial intelligence technologies.
+                </p>
+
             </div>
 
-            <a href="https://github.com/Mateen2627/StudentEvaluationSystem"
+
+            <div class="research-card">
+
+                <h3>
+                    Machine Learning
+                </h3>
+
+                <p>
+                    Machine learning methods and their applications to
+                    practical and real-world problems.
+                </p>
+
+            </div>
+
+
+            <div class="research-card">
+
+                <h3>
+                    Natural Language Processing
+                </h3>
+
+                <p>
+                    Natural language understanding, NLP systems,
+                    and AI-assisted information processing.
+                </p>
+
+            </div>
+
+
+            <div class="research-card">
+
+                <h3>
+                    AI Agents
+                </h3>
+
+                <p>
+                    Agentic AI systems, tool use, automation,
+                    and intelligent workflows.
+                </p>
+
+            </div>
+
+
+            <div class="research-card">
+
+                <h3>
+                    Intelligent Software
+                </h3>
+
+                <p>
+                    Combining software engineering with AI to build
+                    practical intelligent applications.
+                </p>
+
+            </div>
+
+
+            <div class="research-card">
+
+                <h3>
+                    Post-Quantum Computing
+                </h3>
+
+                <p>
+                    Interest in post-quantum cryptography and
+                    quantum-resilient secure communication.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         PROJECTS
+    ====================================================== -->
+
+    <section id="projects">
+
+        <div class="section-header">
+
+            <h2 class="section-title">
+                Selected Projects
+            </h2>
+
+            <p class="section-description">
+                Academic, research, and software development projects.
+            </p>
+
+        </div>
+
+
+        <div class="projects-grid">
+
+
+            <div class="project-card">
+
+                <h3>
+                    Student Evaluation and Management System
+                </h3>
+
+                <p>
+                    An AI-enabled student evaluation and management
+                    platform combining web technologies, role-based
+                    access control, database management, and computer
+                    vision components.
+                </p>
+
+                <div class="technology">
+
+                    <span>Laravel</span>
+                    <span>PHP</span>
+                    <span>MySQL</span>
+                    <span>Python</span>
+                    <span>FastAPI</span>
+                    <span>OpenCV</span>
+
+                </div>
+
+                <a href="https://github.com/Mateen2627/StudentEvaluationSystem"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="project-link">
+                    View on GitHub →
+                </a>
+
+            </div>
+
+
+            <div class="project-card">
+
+                <h3>
+                    QuantX
+                </h3>
+
+                <p>
+                    A research-oriented project exploring quantum-resilient
+                    secure communication and post-quantum cryptographic
+                    technologies.
+                </p>
+
+                <div class="technology">
+
+                    <span>Cryptography</span>
+                    <span>PQC</span>
+                    <span>Secure Communication</span>
+
+                </div>
+
+            </div>
+
+
+            <div class="project-card">
+
+                <h3>
+                    FinanceFlow
+                </h3>
+
+                <p>
+                    A web-based finance management project developed
+                    as part of my software development work.
+                </p>
+
+                <div class="technology">
+
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+
+                </div>
+
+                <a href="https://github.com/Mateen2627/financeflow"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="project-link">
+                    View on GitHub →
+                </a>
+
+            </div>
+
+
+            <div class="project-card">
+
+                <h3>
+                    Flutter Applications
+                </h3>
+
+                <p>
+                    Mobile application development using Flutter and
+                    Dart, focusing on modern cross-platform development.
+                </p>
+
+                <div class="technology">
+
+                    <span>Flutter</span>
+                    <span>Dart</span>
+                    <span>Android</span>
+
+                </div>
+
+                <a href="https://github.com/Mateen2627/myfirstapp"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="project-link">
+                    View on GitHub →
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         SKILLS
+    ====================================================== -->
+
+    <section id="skills">
+
+        <div class="section-header">
+
+            <h2 class="section-title">
+                Technical Skills
+            </h2>
+
+        </div>
+
+
+        <div class="skills-container">
+
+            <span class="skill">Python</span>
+            <span class="skill">PHP</span>
+            <span class="skill">Laravel</span>
+            <span class="skill">JavaScript</span>
+            <span class="skill">HTML</span>
+            <span class="skill">CSS</span>
+            <span class="skill">MySQL</span>
+            <span class="skill">FastAPI</span>
+            <span class="skill">REST APIs</span>
+            <span class="skill">Git</span>
+            <span class="skill">GitHub</span>
+            <span class="skill">Flutter</span>
+            <span class="skill">Dart</span>
+            <span class="skill">Artificial Intelligence</span>
+            <span class="skill">Machine Learning</span>
+            <span class="skill">Generative AI</span>
+            <span class="skill">AI Agents</span>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         EXPERIENCE
+    ====================================================== -->
+
+    <section id="experience">
+
+        <div class="section-header">
+
+            <h2 class="section-title">
+                Experience
+            </h2>
+
+        </div>
+
+
+        <div class="experience-card">
+
+            <div class="date">
+                Software Development
+            </div>
+
+            <h3>
+                Laravel Developer
+            </h3>
+
+            <p>
+                Experience working with Laravel-based web applications,
+                databases, APIs, and software development projects.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         CONTACT
+    ====================================================== -->
+
+    <section id="contact" class="contact">
+
+        <div class="section-header">
+
+            <h2 class="section-title">
+                Let's Connect
+            </h2>
+
+            <p class="section-description">
+                I am interested in graduate study, research opportunities,
+                AI/ML projects, and meaningful technical collaborations.
+            </p>
+
+        </div>
+
+
+        <div class="contact-links">
+
+            <a href="https://github.com/Mateen2627"
                target="_blank"
-               rel="noopener noreferrer"
-               class="project-link">
-                View on GitHub →
+               rel="noopener noreferrer">
+                GitHub
+            </a>
+
+            <a href="https://www.linkedin.com/in/mateen-sajjad/"
+               target="_blank"
+               rel="noopener noreferrer">
+                LinkedIn
+            </a>
+
+            <a href="https://leetcode.com/u/mateen6767/"
+               target="_blank"
+               rel="noopener noreferrer">
+                LeetCode
+            </a>
+
+            <a href="https://www.instagram.com/_m3eeen/"
+               target="_blank"
+               rel="noopener noreferrer">
+                Instagram
             </a>
 
         </div>
 
-
-        <div class="project-card">
-
-            <h3>QuantX</h3>
-
-            <p>
-                A research-oriented project exploring quantum-resilient
-                secure communication and post-quantum cryptographic
-                technologies.
-            </p>
-
-            <div class="technology">
-                <span>Cryptography</span>
-                <span>PQC</span>
-                <span>Secure Communication</span>
-            </div>
-
-        </div>
+    </section>
 
 
-        <div class="project-card">
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
 
-            <h3>FinanceFlow</h3>
+    <footer>
+        © 2026 Mateen Sajjad · Computer Science & AI/ML
+    </footer>
 
-            <p>
-                A web-based finance management project developed
-                as part of my software development work.
-            </p>
-
-            <div class="technology">
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>JavaScript</span>
-            </div>
-
-            <a href="https://github.com/Mateen2627/financeflow"
-               target="_blank"
-               rel="noopener noreferrer"
-               class="project-link">
-                View on GitHub →
-            </a>
-
-        </div>
-
-
-        <div class="project-card">
-
-            <h3>Flutter Applications</h3>
-
-            <p>
-                Mobile application development using Flutter and
-                Dart, focusing on modern cross-platform development.
-            </p>
-
-            <div class="technology">
-                <span>Flutter</span>
-                <span>Dart</span>
-                <span>Android</span>
-            </div>
-
-            <a href="https://github.com/Mateen2627/myfirstapp"
-               target="_blank"
-               rel="noopener noreferrer"
-               class="project-link">
-                View on GitHub →
-            </a>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<section id="skills">
-
-    <div class="section-header">
-
-        <h2 class="section-title">
-            Technical Skills
-        </h2>
-
-    </div>
-
-    <div class="skills-container">
-
-        <span class="skill">Python</span>
-        <span class="skill">PHP</span>
-        <span class="skill">Laravel</span>
-        <span class="skill">JavaScript</span>
-        <span class="skill">HTML</span>
-        <span class="skill">CSS</span>
-        <span class="skill">MySQL</span>
-        <span class="skill">FastAPI</span>
-        <span class="skill">REST APIs</span>
-        <span class="skill">Git</span>
-        <span class="skill">GitHub</span>
-        <span class="skill">Flutter</span>
-        <span class="skill">Dart</span>
-        <span class="skill">Artificial Intelligence</span>
-        <span class="skill">Machine Learning</span>
-        <span class="skill">Generative AI</span>
-        <span class="skill">AI Agents</span>
-
-    </div>
-
-</section>
-
-
-<section id="experience">
-
-    <div class="section-header">
-
-        <h2 class="section-title">
-            Experience
-        </h2>
-
-    </div>
-
-    <div class="experience-card">
-
-        <div class="date">
-            Software Development
-        </div>
-
-        <h3>
-            Laravel Developer
-        </h3>
-
-        <p>
-            Experience working with Laravel-based web applications,
-            databases, APIs, and software development projects.
-        </p>
-
-    </div>
-
-</section>
-
-
-<section id="contact" class="contact">
-
-    <div class="section-header">
-
-        <h2 class="section-title">
-            Let's Connect
-        </h2>
-
-        <p class="section-description">
-            I am interested in graduate study, research opportunities,
-            AI/ML projects, and meaningful technical collaborations.
-        </p>
-
-    </div>
-
-    <div class="contact-links">
-
-        <a href="https://github.com/Mateen2627"
-           target="_blank"
-           rel="noopener noreferrer">
-            GitHub
-        </a>
-
-        <a href="https://www.linkedin.com/in/mateen-sajjad/"
-           target="_blank"
-           rel="noopener noreferrer">
-            LinkedIn
-        </a>
-
-        <a href="https://leetcode.com/u/mateen6767/"
-           target="_blank"
-           rel="noopener noreferrer">
-            LeetCode
-        </a>
-
-        <a href="https://www.instagram.com/_m3eeen/"
-           target="_blank"
-           rel="noopener noreferrer">
-            Instagram
-        </a>
-
-    </div>
-
-</section>
-
-
-<footer>
-    © 2026 Mateen Sajjad · Computer Science & AI/ML
-</footer>
 
 </body>
 </html>
