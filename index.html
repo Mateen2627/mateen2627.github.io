@@ -1963,6 +1963,210 @@
             *, *::before, *::after { transition-duration: .01ms !important; }
         }
 
+
+        /* Compact AI workflow visual in the About section */
+        .about-automation-visual {
+            position: relative;
+            isolation: isolate;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 365px;
+            padding: 34px 20px 55px;
+            overflow: hidden;
+            border: 1px solid rgba(139,108,255,.2);
+            border-radius: 28px;
+            background:
+                radial-gradient(circle at 50% 44%, rgba(139,108,255,.16), transparent 40%),
+                radial-gradient(circle at 90% 15%, rgba(34,211,238,.08), transparent 30%),
+                linear-gradient(145deg, rgba(25,31,57,.92), rgba(13,19,37,.96));
+            box-shadow: 0 24px 65px rgba(0,0,0,.22), inset 0 1px rgba(255,255,255,.025);
+        }
+
+        .about-visual-glow {
+            position: absolute;
+            z-index: -1;
+            width: 210px;
+            height: 210px;
+            border-radius: 50%;
+            background: rgba(139,108,255,.13);
+            filter: blur(38px);
+            animation: aboutGlow 5s ease-in-out infinite alternate;
+        }
+
+        .about-visual-heading {
+            position: absolute;
+            top: 22px;
+            left: 22px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: #aeb8d4;
+            font-size: .64rem;
+            font-weight: 700;
+            letter-spacing: .12em;
+        }
+
+        .about-live-dot {
+            width: 7px;
+            height: 7px;
+            flex: 0 0 7px;
+            border-radius: 50%;
+            background: var(--cyan);
+            box-shadow: 0 0 12px rgba(34,211,238,.8);
+        }
+
+        .about-flow-core {
+            position: relative;
+            z-index: 2;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+            width: min(100%, 235px);
+            padding: 24px 14px;
+            text-align: center;
+            border: 1px solid rgba(167,139,250,.36);
+            border-radius: 22px;
+            background: linear-gradient(145deg, rgba(35,42,75,.98), rgba(20,27,51,.98));
+            box-shadow: 0 0 0 7px rgba(139,108,255,.045), 0 18px 45px rgba(0,0,0,.25);
+        }
+
+        .about-core-icon {
+            display: grid;
+            place-items: center;
+            width: 48px;
+            height: 48px;
+            margin-bottom: 2px;
+            border-radius: 15px;
+            color: #fff;
+            font-weight: 800;
+            font-size: 1rem;
+            background: linear-gradient(135deg, var(--purple), var(--blue), var(--cyan));
+            box-shadow: 0 0 28px rgba(139,108,255,.28);
+        }
+
+        .about-flow-core strong {
+            color: #f4f5ff;
+            font-size: .94rem;
+            line-height: 1.35;
+        }
+
+        .about-flow-core > span {
+            color: #aeb8d4;
+            font-size: .68rem;
+            line-height: 1.5;
+            overflow-wrap: anywhere;
+        }
+
+        .about-flow-node {
+            position: absolute;
+            z-index: 3;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            max-width: 46%;
+            padding: 10px 12px;
+            border: 1px solid rgba(148,163,184,.19);
+            border-radius: 13px;
+            color: #dce3fa;
+            background: rgba(19,26,48,.96);
+            box-shadow: 0 10px 24px rgba(0,0,0,.18);
+            font-size: .72rem;
+            font-weight: 600;
+            animation: aboutNodeFloat 4.5s ease-in-out infinite;
+        }
+
+        .about-node-icon {
+            display: grid;
+            place-items: center;
+            width: 28px;
+            height: 28px;
+            flex: 0 0 28px;
+            border-radius: 9px;
+            color: var(--cyan);
+            background: rgba(34,211,238,.1);
+            font-size: .62rem;
+            font-weight: 800;
+        }
+
+        .about-node-input { top: 92px; left: 18px; }
+        .about-node-tools { top: 92px; right: 18px; animation-delay: -.8s; }
+        .about-node-result { bottom: 72px; left: 50%; transform: translateX(-50%); animation-delay: -1.6s; }
+
+        .about-flow-line {
+            position: absolute;
+            z-index: 1;
+            height: 1px;
+            width: 17%;
+            background: linear-gradient(90deg, rgba(139,108,255,.08), rgba(34,211,238,.7), rgba(139,108,255,.08));
+            box-shadow: 0 0 10px rgba(34,211,238,.12);
+        }
+
+        .about-line-one { top: 143px; left: 24%; transform: rotate(20deg); }
+        .about-line-two { top: 143px; right: 24%; transform: rotate(-20deg); }
+
+        .about-visual-footer {
+            position: absolute;
+            right: 12px;
+            bottom: 20px;
+            left: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 7px;
+            color: #8590af;
+            font-size: .52rem;
+            font-weight: 700;
+            letter-spacing: .08em;
+        }
+
+        .about-footer-separator {
+            width: 3px;
+            height: 3px;
+            border-radius: 50%;
+            background: var(--purple-2);
+        }
+
+        @keyframes aboutNodeFloat {
+            0%, 100% { margin-top: 0; }
+            50% { margin-top: -5px; }
+        }
+
+        @keyframes aboutGlow {
+            from { opacity: .55; transform: scale(.9); }
+            to { opacity: 1; transform: scale(1.12); }
+        }
+
+        @media (max-width: 720px) {
+            .about-automation-visual {
+                min-height: 340px;
+                padding-right: 12px;
+                padding-left: 12px;
+            }
+
+            .about-visual-heading {
+                top: 18px;
+                left: 16px;
+                font-size: .58rem;
+            }
+
+            .about-node-input { left: 10px; top: 78px; }
+            .about-node-tools { right: 10px; top: 78px; }
+            .about-flow-node { gap: 6px; padding: 8px; font-size: .64rem; }
+            .about-node-icon { width: 24px; height: 24px; flex-basis: 24px; }
+            .about-flow-core { width: min(100%, 220px); padding: 20px 12px; }
+            .about-line-one { left: 26%; top: 124px; }
+            .about-line-two { right: 26%; top: 124px; }
+            .about-node-result { bottom: 62px; }
+            .about-visual-footer { font-size: .48rem; gap: 5px; }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .about-visual-glow, .about-flow-node { animation: none !important; }
+        }
+
     </style>
 </head>
 
@@ -2228,6 +2432,47 @@
                         secure computing and Post-Quantum Cryptography.
                     </p>
 
+                </div>
+
+                <div class="about-automation-visual" aria-label="AI automation workflow illustration">
+                    <div class="about-visual-glow"></div>
+                    <div class="about-visual-heading">
+                        <span class="about-live-dot"></span>
+                        INTELLIGENT WORKFLOW
+                    </div>
+
+                    <div class="about-flow-node about-node-input">
+                        <span class="about-node-icon">IN</span>
+                        <span>Input</span>
+                    </div>
+
+                    <div class="about-flow-line about-line-one"></div>
+
+                    <div class="about-flow-core">
+                        <div class="about-core-icon">AI</div>
+                        <strong>Mateen Sajjad</strong>
+                        <span>Computer Science • AI/ML</span>
+                    </div>
+
+                    <div class="about-flow-line about-line-two"></div>
+
+                    <div class="about-flow-node about-node-tools">
+                        <span class="about-node-icon">API</span>
+                        <span>Tools &amp; APIs</span>
+                    </div>
+
+                    <div class="about-flow-node about-node-result">
+                        <span class="about-node-icon">✓</span>
+                        <span>Smart Result</span>
+                    </div>
+
+                    <div class="about-visual-footer">
+                        <span>AI AGENTS</span>
+                        <span class="about-footer-separator"></span>
+                        <span>AUTOMATION</span>
+                        <span class="about-footer-separator"></span>
+                        <span>INTELLIGENCE</span>
+                    </div>
                 </div>
 
             </div>
